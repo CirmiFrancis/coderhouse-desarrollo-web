@@ -1,0 +1,17 @@
+#--------------------------------------- LOS TRES ESTADOS
+
+working directory --> staging area --> repository
+                git add        git commit
+
+*Primero te ubicas en el directorio de trabajo, luego agregas los archivos que quieras al área de stage y por último haces un commit para guardarlos en el repositorio.
+
+#--------------------------------------- COMANDOS GIT
+
+terminal -> new terminal --> bash/zsh --> command
+
+git init                 ||  Inicializa el proyecto. Solo se usa la primera vez, o se puede perder lo guardado previamente.
+git status               ||  Informa qué archivos están siendo monitoreados.
+git add "nombreArchivo"  ||  Se agrega el archivo en el área de stage. Se debe de escribir el nombre del archivo entre las comillas.
+git add .                ||  Se agregan todos los archivos en el área de stage. Útil para no escribir los archivos uno por uno.
+git commit -m "mensaje"  ||  Se guardan los archivos del área de stage en el repositorio. Se debe escribir un mensaje descriptivo.
+clear                    ||  Limpia la consola.
