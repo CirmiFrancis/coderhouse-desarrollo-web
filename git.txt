@@ -14,4 +14,12 @@ git status               ||  Informa qué archivos están siendo monitoreados.
 git add "nombreArchivo"  ||  Se agrega el archivo en el área de stage. Se debe de escribir el nombre del archivo entre las comillas.
 git add .                ||  Se agregan todos los archivos en el área de stage. Útil para no escribir los archivos uno por uno.
 git commit -m "mensaje"  ||  Se guardan los archivos del área de stage en el repositorio. Se debe escribir un mensaje descriptivo.
+git log                  ||  Devuelve una bitácora con: el autor, la fecha y la hora del commit, además del nombre del commit.
+git log --oneline        ||  Devuelve una bitácora reducida con solo el nombre del commit.
+git branch               ||  Muestra una lista con las ramas existentes.
+git branch ...           ||  Crea una rama. En los puntos suspensivos se pone el nombre de la rama a crear.
+git checkout ...         ||  Permite cambiar de rama. En los puntos suspensivos se pone el nombre de la rama a cambiar.
+                         ||  En vez de poner un nombre, podés poner el ID del commit. Útil para volver a una versión anterior.
+git merge ...            ||  Permite unir un código con otro. Hay que posicionarse en la rama donde se quiera traer los cambios, 
+                         ||  y luego escribir este comando, colocando el nombre de la otra rama en los puntos suspensivos.
 clear                    ||  Limpia la consola.
