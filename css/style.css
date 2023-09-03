@@ -25,64 +25,10 @@ main{
 }
 
 /*----------------------------------HEADER----------------------------------*/
-header{
-    position: fixed;
-    display: flex;
-    width: 100%;
-    background-color: white;
-    z-index: 3;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header a{
-    display: flex;
-}
-
-/* LOGO */
-.logo{ /* selector de clase */
-    margin-left: 40px;
-    align-items: center;
-}
-
-.nombre{
-    font-family: BelgianoSerif;
-    font-size: 48px;
-}
-
-.imagen{
-    width: 64px;
-}
-
-/* NAVEGADOR */
-.navegador{
-    margin-right: 20px;
-    text-align: center;
-    align-items: center;
-}
-
-nav li{ 
-    margin-right: 15px;
-    padding: 5px;
-    font-weight: 600;
-    display: inline-block;
-}
-
-nav li a{
-    font-family: ComfortaaLight;
-}
-
-nav li a:hover{
-    color: gray;
-}
-
-#selected-page{ /* selector de id */
-    color: rgb(22, 218, 26);
-}
 
 /* =================================HEADER================================= */
 
-/*
+
 .navbar{
     display: grid;
     grid-template-rows: 50px 35px;
@@ -131,10 +77,10 @@ nav li a:hover{
     color: lightgray;
 }
 
-#selected-page{ /* selector de id 
+#selected-page{ /* selector de id  */
     color: rgb(0, 255, 4);
 }
-*/
+
 /* =================================MAIN================================= */
 .container-sec1, .container-sec2{
     display: flex;
@@ -290,6 +236,42 @@ footer p{
     margin-left: 10px;
 }
 */
+
+/* NOSOTROS */
+.container {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+}
+  
+.text {
+    font-size: 25px;
+    margin-top: 40px;
+    margin-left: 120px;
+    text-align: justify;
+    flex: 1; /* Hace que el texto ocupe todo el espacio disponible */
+}
+
+.text-minigarden {
+    font-size: 40px;
+}
+  
+.image {
+    margin-top: 70px;
+    margin-left: 20px;
+    margin-right: 120px;
+}
+
+#imagen-derecha{
+    width: 500px;
+}
+
+.links{
+    color: white;
+}
+
+.links:hover{
+    text-decoration: underline;
+}
 
 /* =================================RESPONSIVE================================= */
 
