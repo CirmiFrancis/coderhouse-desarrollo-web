@@ -89,7 +89,7 @@ footer p{
 
 /* ================================= MAIN: INDEX ================================= */
 .index main{
-    padding-top: 100px;
+    padding-top: 6.25rem;
     display: flex;
     flex-direction: column;
 }
@@ -100,12 +100,9 @@ footer p{
     margin-bottom: 60px;
 }
 
-.img-sec1{} 
-
 /* Imagen */
 .img-sec1 img{
     width: 350px;
-    height: 100%;
     margin-left: 120px;
     border: 10px solid white;
     border-radius: 25px;
@@ -187,19 +184,56 @@ footer p{
     padding-top: 100px;
     padding-bottom: 60px;
     font-family: sans-serif;
-    text-align: center;
 }
 
-.contacto .titulo h1{
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 80px;
+}
+
+/* Título y Descripción */
+.nosotros .titulo .text{
+    margin-right: 100px;
+    text-align: justify;
+}
+/* Título */
+.nosotros .titulo h1{
     font-size: 100px;
+    margin-bottom: 40px;
+    text-align: center;
     color: white;
     text-shadow: 4px 4px 0px rgba(250, 250, 250, 0.5);
 }
-
-.contacto .titulo p{
-    margin-block: 20px;
-    font-size: 40px;
+/* Descripción */
+.nosotros .titulo p{
+    font-size: 30px;
     color: white;
+}
+
+/* Imagen */
+.nosotros .image{
+    display: flex;
+    align-items: center;
+}
+
+.nosotros .image img{
+    width: 300px;
+    border: 10px solid white;
+    border-radius: 25px;
+
+}
+
+/* Links */
+.nosotros .links{
+    font-weight: bold;
+    text-decoration: underline;
+    color: white;
+}
+
+.nosotros .links:hover{
+    color: rgba(237, 237, 237, 0.738);
 }
 
 /* ================================= MAIN: CONTACTO ================================= */
