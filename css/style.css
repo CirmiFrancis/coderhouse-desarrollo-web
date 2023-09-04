@@ -2,151 +2,69 @@
 @font-face { font-family: ComfortaaLight; src: url("../fonts/comfortaa/Comfortaa-Light.ttf"); } 
 
 /* RESET Y ESTILOS GLOBALES */
-* { /* selector universal */
-    margin: 0;
-    padding: 0;
-    color: black;
-}
+*       {margin: 0; padding: 0; color: black;}
+li      {list-style: none;}
+a       {text-decoration: none;}
+body    {background-color: lightgray;}
+main    {background-color: rgba(3, 161, 3, 0.847);}
 
-li{ /* selector de elemento */
-    list-style: none;
-}
-
-a{ 
-    text-decoration: none;
-}
-
-body{
-    background-color: lightgray;
-}
-
-main{
-    background-color: rgba(3, 161, 3, 0.847);
-}
-
-/*----------------------------------HEADER----------------------------------*/
-
-/* =================================HEADER================================= */
-
-
-.navbar{
-    display: grid;
-    grid-template-rows: 50px 35px;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-areas: 
-        "logo logo logo logo logo"
-        "navegador navegador navegador navegador navegador";
-}
-
-.logo{
-    grid-area: logo;
+/* ================================= HEADER ================================= */
+header{
+    position: fixed;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-family: BelgianoSerif;
-    font-size: 28px;
-
+    width: 100%;
     background-color: white;
-}
-
-.logo h2{
-    color: black;
-}
-
-.logo img{
-    width: 50px;
-}
-
-.enlaces{
-    grid-area: navegador;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    z-index: 3;
     align-items: center;
-    font-family: ComfortaaLight;
-    font-size: 14px;
-    background-color: black;
+    justify-content: space-between;
 }
 
-.enlaces a{
-    color: white;
-}
-
-.enlaces a:hover{
-    color: lightgray;
-}
-
-#selected-page{ /* selector de id  */
-    color: rgb(0, 255, 4);
-}
-
-/* =================================MAIN================================= */
-.container-sec1, .container-sec2{
+header a{
     display: flex;
-    flex-direction: column;
-    padding-top: 10px;
 }
 
-.container-sec1{
-    display: grid;
-    grid-template-rows: 120px 90px 1fr;
-    grid-template-columns: 100%;
-    grid-template-areas: 
-        "titulo"
-        "texto"
-        "imagen";
+/* LOGO */
+.logo{
+    margin-left: 40px;
+    align-items: center;
 }
 
-.container-sec1 h1,p, .container-sec2 h2,p{
-    color: white;
-    font-family: sans-serif;
-}
-
-.container-sec1 h1, .container-sec2 h2{
-    grid-area: titulo;
+.nombre{
+    font-family: BelgianoSerif;
     font-size: 48px;
+}
+
+.imagen{
+    width: 64px;
+}
+
+/* NAVEGADOR */
+.navegador{
+    margin-right: 20px;
     text-align: center;
-    text-shadow: 3px 3px 0px rgba(250, 250, 250, 0.5);
-}
-
-.container-sec1 p{
-    grid-area: texto;
-}
-
-.container-sec1 .img-sec1{
-    grid-area: imagen;
-}
-
-.container-sec1 p, .container-sec2 p{
-    padding-top: 10px;
-    padding-bottom: 20px;
-    text-align: center;
-    font-family: sans-serif;
-    font-size: 20px;
-}
-
-figure{
-    padding-bottom: 15px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 10px;
 }
 
-figure img{
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    border: 5px solid white;
-    border-radius: 25px;
+nav li{ 
+    margin-right: 15px;
+    padding: 5px;
+    font-weight: 600;
+    display: inline-block;
 }
 
-/* =================================FOOTER================================= */
+nav li a{
+    font-family: ComfortaaLight;
+}
 
-/*----------------------------------FOOTER----------------------------------*/
+nav li a:hover{
+    color: gray;
+}
+
+#selected-page{
+    color: rgb(22, 218, 26);
+}
+
+/* ================================= FOOTER ================================= */
 footer {
     padding: 1rem;
     display: flex;
@@ -166,22 +84,147 @@ footer p{
 
 .redes-sociales img {
     width: 35px;
-    margin-left: 10px;
+    padding-left: 10px;
 }
 
-/*----------------------------------OTROS----------------------------------*/
-.jardines main, .faq main, .nosotros main, .contacto main{
-    text-align: center;
-    background-color: rgba(3, 161, 3, 0.847);
+/* ================================= MAIN: INDEX ================================= */
+.index main{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
 }
 
-.titulo h1{
-    padding-top: 70px;
+/* SECCIÓN 1 */
+.container-sec1{
+    display: inline-flex;
+    margin-bottom: 60px;
+}
+
+.img-sec1{} 
+
+/* Imagen */
+.img-sec1 img{
+    width: 350px;
+    height: 100%;
+    margin-left: 120px;
+    border: 10px solid white;
+    border-radius: 25px;
+}
+
+/* Título y Descripción*/
+.text-sec1 {
+    padding-left: 5%;
+    padding-top: 40px;
+    color: white;
+}
+
+/* Título */
+.text-sec1 h1{
     font-family: sans-serif;
-    font-size: 96px;
+    font-size: 100px;
+    color: white;
+    text-shadow: 4px 4px 0px rgba(250, 250, 250, 0.5);
 }
 
-/* FORMULARIO - CONTACTO */
+/* Descripción */
+.text-sec1 p{
+    font-family: sans-serif;
+    font-size: 50px;
+    padding-right: 10%;
+    color: white;
+    padding-top: 40px;
+}
+
+/* SECCIÓN 2 */
+.container-sec2{
+    margin-bottom: 20px;
+}
+
+.img-sec2{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+} 
+
+/* Imagen */
+.img-sec2 img{
+    width: 300px;
+    margin: 30px;
+    border: 10px solid white;
+    border-radius: 25px;
+}
+
+/* Título y Descripción*/
+.text-sec2 {
+    padding-top: 30px;
+    text-align: center;
+    color: white;
+}
+
+/* Título */
+.text-sec2 h2{
+    font-family: sans-serif;
+    font-size: 100px;
+    color: white;
+    text-shadow: 4px 4px 0px rgba(250, 250, 250, 0.5);
+}
+
+/* Descripción */
+.text-sec2 p{
+    font-family: sans-serif;
+    font-size: 40px;
+    color: white;
+    padding-top: 40px;
+}
+
+/* ================================= MAIN: JARDINES ================================= */
+
+/* ================================= MAIN: FAQ ================================= */
+
+
+/* ================================= MAIN: NOSOTROS ================================= */
+.nosotros main{
+    padding-top: 100px;
+    padding-bottom: 60px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.contacto .titulo h1{
+    font-size: 100px;
+    color: white;
+    text-shadow: 4px 4px 0px rgba(250, 250, 250, 0.5);
+}
+
+.contacto .titulo p{
+    margin-block: 20px;
+    font-size: 40px;
+    color: white;
+}
+
+/* ================================= MAIN: CONTACTO ================================= */
+.contacto main{
+    padding-top: 100px;
+    padding-bottom: 60px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+/* Título */
+.contacto .titulo h1{
+    font-size: 100px;
+    color: white;
+    text-shadow: 4px 4px 0px rgba(250, 250, 250, 0.5);
+}
+
+/* Descripción */
+.contacto .titulo p{
+    margin-block: 20px;
+    font-size: 40px;
+    color: white;
+}
+
+/* FORMULARIO */
 form {
     max-width: 400px;
     margin: 0 auto;
@@ -191,6 +234,7 @@ label {
     display: block;
     margin-bottom: 5px;
     text-align: left;
+    color: white;
 }
 
 input, textarea {
@@ -198,6 +242,7 @@ input, textarea {
     margin-bottom: 15px;
     padding: 8px;
     font-size: 15px;
+    resize: none;
 }
 
 input::placeholder, textarea::placeholder{
@@ -211,87 +256,4 @@ button {
     background-color: white;
     border: none;
     cursor: pointer;
-}
-
-/*
-footer {
-    font-family: sans-serif;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-}
-
-footer p{
-    color: black;
-}
-
-.redes-sociales{
-    margin-left: 30px;
-}
-
-.redes-sociales img {
-    width: 35px;
-    margin-left: 10px;
-}
-*/
-
-/* NOSOTROS */
-.container {
-    display: flex;
-    align-items: center; /* Alinea verticalmente los elementos */
-}
-  
-.text {
-    font-size: 25px;
-    margin-top: 40px;
-    margin-left: 120px;
-    text-align: justify;
-    flex: 1; /* Hace que el texto ocupe todo el espacio disponible */
-}
-
-.text-minigarden {
-    font-size: 40px;
-}
-  
-.image {
-    margin-top: 70px;
-    margin-left: 20px;
-    margin-right: 120px;
-}
-
-#imagen-derecha{
-    width: 500px;
-}
-
-.links{
-    color: white;
-}
-
-.links:hover{
-    text-decoration: underline;
-}
-
-/* =================================RESPONSIVE================================= */
-
-@media (min-width: 660px) {
-
-    .container-sec1{
-        flex-direction: row;
-    }
-
-
-    .img-sec1 img{
-        margin-right: 20px;
-        width: 200px;
-
-    }
-
-    .img-sec2{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
 }
