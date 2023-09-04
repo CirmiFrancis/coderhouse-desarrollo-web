@@ -233,6 +233,7 @@ footer p{
     justify-content: center;
     align-items: center;
     margin-inline: 80px;
+    margin-block: 80px;
 }
 
 /* Título y Descripción */
