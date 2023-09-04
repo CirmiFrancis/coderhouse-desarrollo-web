@@ -215,11 +215,22 @@ footer p{
 }
 */
 
+.jardines
+
 /* ================================= MAIN: FAQ ================================= */
 .faq main{
     padding-top: 100px;
     padding-bottom: 60px;
     font-family: sans-serif;
+}
+
+.faq .links{
+    font-weight: bold;
+    color: rgb(18, 182, 0);
+}
+
+.faq .links:hover{
+    color: rgba(4, 209, 0, 0.738);
 }
 
 /* ================================= MAIN: NOSOTROS ================================= */
@@ -297,7 +308,7 @@ footer p{
 
 /* Descripción */
 .contacto main p{
-    margin-block: 10px 40px;
+    margin-block: 10px 60px;
     font-size: 40px;
     color: white;
 }
