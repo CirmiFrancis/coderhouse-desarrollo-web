@@ -3,65 +3,113 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- custom style -->
-    <link rel="stylesheet" href="../css/style.css">
-    <!-- icon -->
-    <link rel="icon" href="../imgs/icon/hoja.ico" type="image/x-icon">
-    <!-- title -->
+    <!-- Title -->
     <title>MiniGarden | Contacto</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Custom style -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Icon -->
+    <link rel="icon" href="../imgs/icon/hoja.ico" type="image/x-icon">
 </head>
-
+    
 <body class="contacto">
-    <header>
-        <a href="../index.html" class="logo">
-            <h2 class="nombre">Mini</h2>
-            <img src="../imgs/logo/bonsai.png" alt="Logo de Mini Garden" class="imagen">
-            <h2 class="nombre">Garden</h2>
-        </a>
 
-        <nav class="navegador">
-            <ul class="lista-desordenada">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./jardines.html">Jardínes</a></li>
-                <li><a href="./faq.html">FAQ</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./contacto.html" id="selected-page">Contacto</a></li>
-            </ul>
+    <!-- Header-Navbar -->
+    <header>
+        <nav class="navbar fixed-top navbar-expand-md nav-custom">
+            <div class="container-fluid navbar-custom">
+
+                <div class="logo">        
+                    <a class="navbar-brand logo-texto" href="../index.html">Mini</a>
+                    <img src="../imgs/logo/bonsai.png" alt="Logo de Mini Garden" class="logo-imagen">
+                    <a class="navbar-brand logo-texto" href="../index.html">Garden</a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto ul-custom">
+                        <li class="nav-item px-2">
+                            <a class="nav-link enlace-custom" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link enlace-custom" href="./jardines.html">Jardínes</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link enlace-custom" href="./faq.html">FAQ</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link enlace-custom" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item ps-2">
+                            <a class="nav-link" href="./contacto.html" id="selected-page">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
         </nav>
     </header>
 
-    <main>
-        <h1>CONTACTO</h1>
-        <p>Puedes contactarnos a través de este formulario:</p>
-        <!--Formulario-->
-        <form>
-            <br>
-            <label for="name">Nombre</label>
-            <input type="text" id="name" placeholder="Ej: Juan Fernández"><br>
+    <!-- Main-Form -->
+    <main class="container-fluid padding-custom">
+        <div class="row pb-5">
+            <div class="col"><h1>Contacto</h1></div>
+        </div>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Ej: juanfernandez@gmail.com"><br><br><br>
-
-            <input id="title" placeholder="Escribe un título..."><br>
-
-            <textarea id="mensaje" cols="60" rows="10" placeholder="Escribe un mensaje..."></textarea><br>
-
-            <button type="submit">Enviar</button>
+        <form class="container-fluid">
+            <div class="row pb-3">
+                <div class="col">           
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" placeholder="Ej: Juan Fernández">
+                </div>
+            </div>
+            <div class="row pb-4">
+                <div class="col">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Ej: juanfernandez@gmail.com">
+                </div>
+            </div>
+            <div class="row pt-4">
+                <div class="col">
+                    <input id="title" placeholder="Escribe un título...">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <textarea id="mensaje" cols="60" rows="10" placeholder="Escribe un mensaje..."></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button type="submit">Enviar</button>
+                </div>
+            </div>
         </form>
     </main>
 
+    <!-- Footer -->
     <footer>
-        <div>
-            <p>&COPY; 2023 MiniGarden</p>
-        </div>
-    
-        <div class="redes-sociales">
-            <a href="https://www.facebook.com" target="_blank"><img src="../imgs/rrss/facebook.png" alt="Ícono de Facebook"></a>
-            <a href="https://www.youtube.com" target="_blank"><img src="../imgs/rrss/youtube.png" alt="Ícono de Youtube"></a>
-            <a href="https://www.instagram.com" target="_blank"><img src="../imgs/rrss/instagram.png" alt="Ícono de Instagram"></a>      
+        <div class="container-fluid py-3">
+            <div class="row">
+                <div class="col-6 copyright">&COPY; 2023 MiniGarden</div>
+
+                <div class="col-6 redes-sociales">            
+                    <a href="https://www.facebook.com" target="_blank"><img src="../imgs/rrss/facebook.png" alt="Ícono de Facebook"></a>
+                    <a href="https://www.youtube.com" target="_blank"><img src="../imgs/rrss/youtube.png" alt="Ícono de Youtube"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="../imgs/rrss/instagram.png" alt="Ícono de Instagram"></a> 
+                </div>
+            </div>
         </div>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
