@@ -3,72 +3,100 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- custom style -->
-    <link rel="stylesheet" href="../css/style.css">
-    <!-- icon -->
-    <link rel="icon" href="../imgs/icon/hoja.ico" type="image/x-icon">
-    <!-- title -->
+    <!-- Title -->
     <title>MiniGarden | Nosotros</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Custom style -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Icon -->
+    <link rel="icon" href="../imgs/icon/hoja.ico" type="image/x-icon">
 </head>
-
+    
 <body class="nosotros">
-    <header>
-        <a href="../index.html" class="logo">
-            <h2 class="nombre">Mini</h2>
-            <img src="../imgs/logo/bonsai.png" alt="Logo de Mini Garden" class="imagen">
-            <h2 class="nombre">Garden</h2>
-        </a>
 
-        <nav class="navegador">
-            <ul class="lista-desordenada">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./jardines.html" >Jardínes</a></li>
-                <li><a href="./faq.html">FAQ</a></li>
-                <li><a href="./nosotros.html" id="selected-page">Nosotros</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
+    <!-- Header-Navbar -->
+    <header>
+        <nav class="navbar fixed-top navbar-expand-md nav-custom">
+            <div class="container-fluid navbar-custom">
+
+                <div class="logo">        
+                    <a class="navbar-brand logo-texto" href="../index.html">Mini</a>
+                    <img src="../imgs/logo/bonsai.png" alt="Logo de Mini Garden" class="logo-imagen">
+                    <a class="navbar-brand logo-texto" href="../index.html">Garden</a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto ul-custom">
+                        <li class="nav-item px-2">
+                            <a class="nav-link enlace-custom" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link enlace-custom" href="./jardines.html">Jardínes</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link enlace-custom" href="./faq.html">FAQ</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="./nosotros.html" id="selected-page">Nosotros</a>
+                        </li>
+                        <li class="nav-item ps-2">
+                            <a class="nav-link enlace-custom" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
         </nav>
     </header>
 
-    <main>
-        <h1>NOSOTROS</h1>
-        <div class="container-nos">
-            <div class="text">
-                <p>
-                    Somos un pequeño emprendimiento con fines de lucro,<br>
-                    que busca transmitir lo hermoso de la naturaleza<br>
-                    a través de "jardínes en miniatura".
-                    <br><br>
-                    Para más información, puedes ir a la sección de <a href="./faq.html" class="links">FAQ</a>.
-                    <br><br>
-                    Cualquier duda, puedes escribirnos un mensaje <br> 
-                    en la sección <a href="./contacto.html" class="links">Contacto</a>.
-                    <br><br>
-                    También pueden seguirnos en nuestras redes sociales: 
-                    <br>
-                        <a href="https://www.facebook.com" target="_blank" class="links">Facebook</a>,
-                        <a href="https://www.youtube.com" target="_blank" class="links">Youtube</a> e
-                        <a href="https://www.instagram.com" target="_blank" class="links">Instagram</a>.
-                </p>
-            </div>
-            <div class="image">
-                <img src="../imgs/jardines/rpg-jardin-alto3.jpg" alt="Imagen de un jardín en miniatura" title="Jardín en miniatura" id="imagen-derecha">
-            </div>
-        </div>
+    <!-- Main-Text -->
+    <main class="container-fluid pb-5 padding-custom">
+
+        <h1 class="col-12 pb-5">Sobre Nosotros</h1>
+
+        <div class="col-12">
+            <p>
+                MiniGarden es más que un simple emprendimiento con fines de lucro. Somos un equipo apasionado que se ha dedicado a capturar la belleza de la naturaleza en pequeños mundos verdes.
+            </p>
+                
+            <p>
+                Nuestros jardínes en miniatura son auténticas obras de arte, meticulosamente diseñadas y cultivadas con una dosis extra de amor. Cada uno de ellos cuenta una historia única que te transportará a lugares mágicos.
+            </p>
+
+            <p>
+                ¿Qué nos impulsa? Una profunda pasión por los jardínes en miniatura y el deseo de compartir esa pasión contigo. Nos inspira la idea de que la belleza de la naturaleza puede caber en la palma de tu mano, y queremos que formes parte de esta experiencia.
+            </p>
+
+            <p class="text-center">
+                Bienvenido a MiniGarden, donde los sueños en miniatura se hacen realidad.
+            </p>
+        </div> 
     </main>
 
+    <!-- Footer -->
     <footer>
-        <div>
-            <p>&COPY; 2023 MiniGarden</p>
-        </div>
-    
-        <div class="redes-sociales">
-            <a href="https://www.facebook.com" target="_blank"><img src="../imgs/rrss/facebook.png" alt="Ícono de Facebook"></a>
-            <a href="https://www.youtube.com" target="_blank"><img src="../imgs/rrss/youtube.png" alt="Ícono de Youtube"></a>
-            <a href="https://www.instagram.com" target="_blank"><img src="../imgs/rrss/instagram.png" alt="Ícono de Instagram"></a>      
+        <div class="container-fluid py-3">
+            <div class="row">
+                <div class="col-6 copyright">&COPY; 2023 MiniGarden</div>
+
+                <div class="col-6 redes-sociales">            
+                    <a href="https://www.facebook.com" target="_blank"><img src="../imgs/rrss/facebook.png" alt="Ícono de Facebook"></a>
+                    <a href="https://www.youtube.com" target="_blank"><img src="../imgs/rrss/youtube.png" alt="Ícono de Youtube"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="../imgs/rrss/instagram.png" alt="Ícono de Instagram"></a> 
+                </div>
+            </div>
         </div>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
