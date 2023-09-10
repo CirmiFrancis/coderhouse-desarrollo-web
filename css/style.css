@@ -1,62 +1,56 @@
 @font-face { font-family: BelgianoSerif; src: url("../fonts/belgiano_serif/Belgiano\ Serif\ 2.otf"); } 
-@font-face { font-family: ComfortaaLight; src: url("../fonts/comfortaa/Comfortaa-Light.ttf"); } 
+@font-face { font-family: ComfortaaLight; src: url("../fonts/comfortaa/Comfortaa-Light.ttf"); }
 
 /* RESET Y ESTILOS GLOBALES */
 *       {margin: 0; padding: 0; color: black;}
 li      {list-style: none;}
 a       {text-decoration: none;}
 body    {background-color: lightgray;}
-main    {background-color: rgba(3, 161, 3, 0.847);}
+main    {background-color: #1aa95f;}
+
+html, body{
+    max-width: 100%;
+    height: 100%;
+}
 
 /* ================================= HEADER ================================= */
-header{
-    position: fixed;
-    display: flex;
-    width: 100%;
-    background-color: white;
-    z-index: 3;
-    align-items: center;
-    justify-content: space-between;
-}
-
 header a{
-    display: flex;
-}
-
-/* LOGO */
-.logo{
-    margin-left: 40px;
-    align-items: center;
-}
-
-.nombre{
     font-family: BelgianoSerif;
-    font-size: 48px;
 }
-
-.imagen{
-    width: 64px;
-}
-
-/* NAVEGADOR */
-.navegador{
-    margin-right: 20px;
-    text-align: center;
-    align-items: center;
-}
-
-nav li{ 
-    margin-right: 15px;
-    padding: 5px;
-    font-weight: 600;
-    display: inline-block;
-}
-
-nav li a{
+header li a{
     font-family: ComfortaaLight;
 }
 
-nav li a:hover{
+.nav-custom{
+    background-color: white;
+}
+.navbar-custom{
+    background-color: white;
+}
+
+.logo{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+.logo-texto{
+    margin: 0;
+    font-size: 50px;
+}
+.logo-imagen {
+    width: 64px;
+}
+
+.ul-custom{
+    margin-right: 20px;
+    margin-top: 5px;
+    font-size: 17px;
+}
+
+.enlace-custom{
+    color: black;
+}
+.enlace-custom:hover{
     color: gray;
 }
 
@@ -64,27 +58,50 @@ nav li a:hover{
     color: rgb(22, 218, 26);
 }
 
-/* ================================= FOOTER ================================= */
-footer {
-    padding: 1rem;
-    display: flex;
-    text-align: center;
-    background-color: white;
-    align-items: center;
-    justify-content: center;
+@media (min-width: 768px) and (max-width: 991.98px){
+    .logo{
+        margin-left: 10px;
+    }
+
+    .logo-texto{
+        font-size: 35px;
+    }
+
+    .ul-custom{
+        margin-right: 10px;
+        margin-top: 5px;
+        font-size: 15px;
+    }
 }
 
-footer p{
-    color: black;
+@media (min-width: 576px) and (max-width: 767.98px){
+    .logo{
+        margin-left: 10px;
+    }   
+
+    .logo-texto{
+        font-size: 35px;
+    }   
 }
 
-.redes-sociales{
-    margin-left: 30px;
+@media (min-width: 349.98px) and (max-width: 575.98px){
+    .logo{
+        margin-left: 5px;
+    }
+
+    .logo-texto{
+        font-size: 35px;
+    }   
 }
 
-.redes-sociales img {
-    width: 35px;
-    padding-left: 10px;
+@media (max-width: 349.98px){
+    .logo{
+        margin-left: 5px;
+    }
+
+    .logo-texto{
+        font-size: 30px;
+    }   
 }
 
 /* ================================= MAIN: INDEX ================================= */
@@ -215,22 +232,98 @@ footer p{
 }
 */
 
-.jardines
-
 /* ================================= MAIN: FAQ ================================= */
-.faq main{
-    padding-top: 100px;
-    padding-bottom: 60px;
-    font-family: sans-serif;
+.faq .padding-custom{
+    padding-top: 140px;
+}
+
+.faq .width-custom{
+    width: 75%;
+}
+
+.faq h1{
+    font-size: 64px;
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 2px 2px 0px rgba(250, 250, 250, 0.5);
 }
 
 .faq .links{
+    text-decoration: underline;
     font-weight: bold;
-    color: rgb(18, 182, 0);
+    color: rgb(26, 255, 0);
 }
 
 .faq .links:hover{
-    color: rgba(4, 209, 0, 0.738);
+    color: rgba(5, 219, 1, 0.738);
+}
+
+.faq .accordion-item-custom{
+    font-family: ComfortaaLight;
+    color: black;
+    border: none;
+    box-shadow: none;
+}
+
+.faq .accordion-header-custom{
+    background-color: #1aa95f;
+}
+
+.faq .accordion-button-custom{
+    font-size: 20px;
+    color: white;
+    background-color: #1aa95f;
+}
+.faq .accordion-button-custom:active{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.faq .accordion-button-custom:focus{
+    box-shadow: none;
+}
+.faq .accordion-button-custom:not(.collapsed){
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: none;
+}
+
+.faq .accordion-body-custom{
+    font-size: 18px;
+    text-align: justify;
+    color: white;
+    background-color: #1aa95f;
+    box-shadow: none;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+    .logo{
+        margin-left: 10px;
+    }   
+
+    .logo-texto{
+        font-size: 35px;
+    }   
+}
+
+@media (max-width: 575.98px){
+    .faq .padding-custom{
+        padding-top: 110px;
+    }
+
+    .faq .width-custom{
+        width: 100%;
+    }
+
+    .faq h1{
+        font-size: 48px;
+    }
+
+    .faq .accordion-button-custom{
+        font-size: 18px;
+    }
+
+    .faq .accordion-body-custom{
+        font-size: 16px;
+    }
 }
 
 /* ================================= MAIN: NOSOTROS ================================= */
@@ -346,4 +439,30 @@ button {
     background-color: white;
     border: none;
     cursor: pointer;
+}
+
+/* ================================= FOOTER ================================= */
+
+footer{
+    background-color: white;
+}
+
+.copyright{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.redes-sociales img {
+    width: 50px;
+    padding-left: 10px;
+}
+
+@media (max-width: 375px) {
+    .copyright{
+        font-size: 14px;
+    }
+    .redes-sociales img {
+        width: 40px;
+    }
 }
