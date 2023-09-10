@@ -265,45 +265,47 @@ header li a{
 }
 
 /* ================================= MAIN: JARDINES ================================= */
-
-/*
-.jardines header{
-    background-color: white;
-}
-
-.jardines main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 100px;
-    padding-bottom: 60px;
-    font-family: sans-serif;
-}
-
 .jardines h1{
     font-size: 100px;
-    font-family: sans-serif;
-    margin-bottom: 40px;
-    text-align: center;
     color: white;
-    text-shadow: 4px 4px 0px rgba(250, 250, 250, 0.5);
+    text-align: center;
+    text-shadow: 2px 2px 0px rgba(250, 250, 250, 0.5);
 }
 
-.jardines .row{
-    background-color: red;
+.jardines .texto-custom{
+    font-size: 30px;
+    font-family: BelgianoSerif;
 }
 
-.jardines .container{
-    background-color: rgba(0, 209, 0, 0.847);
+.jardines .padding-custom{
+    padding-top: 140px;
 }
 
-.jardines .container img{
-    width: 300px;
-    border: 8px solid white;
-    border-radius: 60px;
+.jardines .jardin-custom {
+    transition: all 0.25s;
+  }
+
+.jardines .jardin-custom:hover {
+    transform: scale(1.1);
 }
-*/
+
+@media (max-width: 991.98px){
+    .jardines .padding-custom{
+        padding-top: 110px;
+    }
+}
+
+@media (min-width: 424.98px) and (max-width: 767.98px){
+    .jardines h1{
+        font-size: 80px;;
+    }
+}
+
+@media (max-width: 424.98px){
+    .jardines h1{
+        font-size: 60px;;
+    }
+}
 
 /* ================================= MAIN: FAQ ================================= */
 .faq h1{

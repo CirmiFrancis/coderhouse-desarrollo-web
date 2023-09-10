@@ -3,90 +3,161 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <!-- custom style -->
-    <link rel="stylesheet" href="../css/style.css">
-    <!-- icon -->
-    <link rel="icon" href="../imgs/icon/hoja.ico" type="image/x-icon">
-    <!-- title -->
+    <!-- Title -->
     <title>MiniGarden | Jardínes</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Custom style -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Icon -->
+    <link rel="icon" href="../imgs/icon/hoja.ico" type="image/x-icon">
 </head>
-
-<body class="jardines">
-    <div class="container-fluid">
-
-        <div class="row">
-            <div class="col-md-12 bg-danger d-flex justify-content-center">
-                <header>
-                    <a href="./index.html" class="logo">
-                        <h2 class="nombre">Mini</h2>
-                        <img src="../imgs/logo/bonsai.png" alt="Logo de Mini Garden" class="imagen">
-                        <h2 class="nombre">Garden</h2>
-                    </a>
-            
-                    <nav class="navegador d-flex align-items-center">
-                        <ul class="lista-desordenada d-flex align-items-center">
-                            <li><a href="../index.html" id="selected-page">Inicio</a></li>
-                            <li><a href="./jardines.html">Jardínes</a></li>
-                            <li><a href="./faq.html">FAQ</a></li>
-                            <li><a href="./nosotros.html">Nosotros</a></li>
-                            <li><a href="./contacto.html">Contacto</a></li>
-                        </ul>
-                    </nav>
-                </header>
-            </div>
-        </div>
-
-        <div class="row margin-top">
-            <div class="col-3 bg-primary d-flex justify-content-center">
-                <img src="../imgs/jardines/absolutereality16-jardin1.jpg" class="img-thumbnail" alt="jardin1">
-            </div>
-            <div class="col-3 bg-secondary d-flex justify-content-center">
-                <img src="../imgs/jardines/absolutereality16-jardin2.jpg" class="img-thumbnail" alt="jardin2">
-            </div>
-            <div class="col-3 bg-success d-flex justify-content-center">
-                <img src="../imgs/jardines/absolutereality16-jardin3.jpg" class="img-thumbnail" alt="jardin3">
-            </div>
-            <div class="col-3 bg-warning d-flex justify-content-center">
-                <img src="../imgs/jardines/absolutereality16-jardin4.jpg" class="img-thumbnail" alt="jardin4">               
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-3 bg-primary d-flex justify-content-center">
-                <img src="../imgs/jardines/dreamshaper7-jardin1.jpg" class="img-thumbnail" alt="jardin1">
-            </div>
-            <div class="col-3 bg-secondary d-flex justify-content-center">
-                <img src="../imgs/jardines/dreamshaper7-jardin2.jpg" class="img-thumbnail" alt="jardin2">
-            </div>
-            <div class="col-3 bg-success d-flex justify-content-center">
-                <img src="../imgs/jardines/dreamshaper7-jardin3.jpg" class="img-thumbnail" alt="jardin3">
-            </div>
-            <div class="col-3 bg-warning d-flex justify-content-center">
-                <img src="../imgs/jardines/dreamshaper7-jardin4.jpg" class="img-thumbnail" alt="jardin4">               
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12 bg-danger d-flex justify-content-center align-items-center">
-                <footer>
-                    <div>
-                        <p>&COPY; 2023 MiniGarden</p>
-                    </div>
-                
-                    <div class="redes-sociales">
-                        <a href="https://www.facebook.com" target="_blank"><img src="../imgs/rrss/facebook.png" alt="Ícono de Facebook"></a>
-                        <a href="https://www.youtube.com" target="_blank"><img src="../imgs/rrss/youtube.png" alt="Ícono de Youtube"></a>
-                        <a href="https://www.instagram.com" target="_blank"><img src="../imgs/rrss/instagram.png" alt="Ícono de Instagram"></a>      
-                    </div>
-                </footer>
-            </div>
-        </div>
-    </div>
     
-    <!-- bootstrap -->
-    <script src="./js/bootstrap.bundle.min.js"></script>
+<body class="jardines">
+
+    <!-- Header-Navbar -->
+    <header>
+        <nav class="navbar fixed-top navbar-expand-md nav-custom">
+            <div class="container-fluid navbar-custom">
+
+                <div class="logo">        
+                    <a class="navbar-brand logo-texto" href="../index.html">Mini</a>
+                    <img src="../imgs/logo/bonsai.png" alt="Logo de Mini Garden" class="logo-imagen">
+                    <a class="navbar-brand logo-texto" href="../index.html">Garden</a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto ul-custom">
+                        <li class="nav-item px-2">
+                            <a class="nav-link enlace-custom" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="./jardines.html" id="selected-page">Jardínes</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link enlace-custom" href="./faq.html">FAQ</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link enlace-custom" href="./nosotros.html" >Nosotros</a>
+                        </li>
+                        <li class="nav-item ps-2">
+                            <a class="nav-link enlace-custom" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main-Text -->
+    <main class="container-fluid padding-custom">
+
+        <h1 class="col-12 pb-4">JARDÍNES</h1>
+
+        <div class="container-fluid d-flex flex-column flex-nowrap">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center p-3">
+                    <div class="card jardin-custom" style="width: 18rem;">
+                        <img src="../imgs/jardines/absolutereality16-jardin1.jpg" class="card-img-top" alt="jardin1">
+                        <div class="card-body">
+                          <p class="card-text text-center texto-custom">$10000 ARS</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center p-3">
+                    <div class="card jardin-custom" style="width: 18rem;">
+                        <img src="../imgs/jardines/absolutereality16-jardin2.jpg" class="card-img-top" alt="jardin2">
+                        <div class="card-body">
+                          <p class="card-text text-center texto-custom">$10000 ARS</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center p-3">
+                    <div class="card jardin-custom" style="width: 18rem;">
+                        <img src="../imgs/jardines/absolutereality16-jardin3.jpg" class="card-img-top" alt="jardin3">
+                        <div class="card-body">
+                          <p class="card-text text-center texto-custom">$10000 ARS</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center p-3">
+                    <div class="card jardin-custom" style="width: 18rem;">
+                        <img src="../imgs/jardines/absolutereality16-jardin4.jpg" class="card-img-top" alt="jardin4">
+                        <div class="card-body">
+                          <p class="card-text text-center texto-custom">$10000 ARS</p>
+                        </div>
+                    </div>            
+                </div>
+            </div>
+    
+            <div class="row pb-5">
+                <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center p-3">
+                    <div class="card jardin-custom" style="width: 18rem;">
+                        <img src="../imgs/jardines/dreamshaper7-jardin1.jpg" class="card-img-top" alt="jardin5">
+                        <div class="card-body">
+                          <p class="card-text text-center texto-custom">$10000 ARS</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center p-3">
+                    <div class="card jardin-custom" style="width: 18rem;">
+                        <img src="../imgs/jardines/dreamshaper7-jardin2.jpg" class="card-img-top" alt="jardin6">
+                        <div class="card-body">
+                          <p class="card-text text-center texto-custom">$10000 ARS</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center p-3">
+                    <div class="card jardin-custom" style="width: 18rem;">
+                        <img src="../imgs/jardines/dreamshaper7-jardin3.jpg" class="card-img-top" alt="jardin7">
+                        <div class="card-body">
+                          <p class="card-text text-center texto-custom">$10000 ARS</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center p-3">
+                    <div class="card jardin-custom" style="width: 18rem;">
+                        <img src="../imgs/jardines/dreamshaper7-jardin4.jpg" class="card-img-top" alt="jardin8">
+                        <div class="card-body">
+                          <p class="card-text text-center texto-custom">$10000 ARS</p>
+                        </div>
+                    </div>              
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid py-3">
+            <div class="row">
+                <div class="col-6 copyright">&COPY; 2023 MiniGarden</div>
+
+                <div class="col-6 redes-sociales">            
+                    <a href="https://www.facebook.com" target="_blank"><img src="../imgs/rrss/facebook.png" alt="Ícono de Facebook"></a>
+                    <a href="https://www.youtube.com" target="_blank"><img src="../imgs/rrss/youtube.png" alt="Ícono de Youtube"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="../imgs/rrss/instagram.png" alt="Ícono de Instagram"></a> 
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
