@@ -3,73 +3,150 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- custom style -->
-    <link rel="stylesheet" href="./css/style.css">
-    <!-- icon -->
-    <link rel="icon" href="./imgs/icon/hoja.ico" type="image/x-icon">
-    <!-- title -->
+    <!-- Title -->
     <title>MiniGarden | Inicio</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Custom style -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Icon -->
+    <link rel="icon" href="./imgs/icon/hoja.ico" type="image/x-icon">
 </head>
-
+    
 <body class="index">
-    <header>
-        <a href="./index.html" class="logo">
-            <h2 class="nombre">Mini</h2>
-            <img src="./imgs/logo/bonsai.png" alt="Logo de Mini Garden" class="imagen">
-            <h2 class="nombre">Garden</h2>
-        </a>
 
-        <nav class="navegador">
-            <ul class="lista-desordenada">
-                <li><a href="./index.html" id="selected-page">Inicio</a></li>
-                <li><a href="./pages/jardines.html">Jardínes</a></li>
-                <li><a href="./pages/faq.html">FAQ</a></li>
-                <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
+    <!-- Header-Navbar -->
+    <header>
+        <nav class="navbar fixed-top navbar-expand-md nav-custom">
+            <div class="container-fluid navbar-custom">
+
+                <div class="logo">        
+                    <a class="navbar-brand logo-texto" href="./index.html">Mini</a>
+                    <img src="./imgs/logo/bonsai.png" alt="Logo de Mini Garden" class="logo-imagen">
+                    <a class="navbar-brand logo-texto" href="./index.html">Garden</a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto ul-custom">
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="./index.html" id="selected-page">Inicio</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link enlace-custom" href="./pages/jardines.html">Jardínes</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link enlace-custom" href="./pages/faq.html">FAQ</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link enlace-custom" href="./pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item ps-2">
+                            <a class="nav-link enlace-custom" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
         </nav>
     </header>
 
-    <main>
-        <section class="container-sec1">
-            <figure class="img-sec1">
-                <img src="./imgs/jardines/absolutereality16-jardin3.jpg" alt="Imagen de un Jardín en miniatura">
-            </figure>
+    <!-- Main-Index -->
+    <main class="container-fluid d-flex flex-column justify-content-center align-items-center px-0 padding-custom">
 
-            <div class="text-sec1">
-                <h1>JARDÍNES EN MINIATURA</h1>
-                <p>Pequeños jardínes elaborados con materiales naturales y artificiales.</p>
-            </div>
-        </section>
+        <div class="row container-fluid d-flex justify-content-center align-items-center pb-5">
 
-        <hr>
-
-        <section class="container-sec2">
-            <div class="text-sec2">
-                <h2>PERSONALIZA TU JARDÍN</h2>
-                <p>¡Ahora puedes contactarnos y pedirnos tu jardín soñado!</p>
+            <div class="col-12 col-md-8 order-md-1 d-flex justify-content-center flex-wrap text-justify section1-right">
+                <div class="row">
+                    <h1>JARDÍNES EN MINIATURA</h1>
+                </div>
+                <div class="row">
+                    <p>Pequeños jardínes elaborados con materiales naturales y artificiales.</p>
+                </div>
             </div>
 
-            <figure class="img-sec2">
-                <img src="./imgs/jardines/rpg-jardin-ancho1.jpg" alt="Imagen de un Jardín en miniatura">
-                <img src="./imgs/jardines/rpg-jardin-ancho3.jpg" alt="Imagen de un Jardín en miniatura">
-                <img src="./imgs/jardines/rpg-jardin-ancho4.jpg" alt="Imagen de un Jardín en miniatura">
-            </figure>
-        </section>
+            <div class="col-12 col-md-4 order-md-0 d-flex justify-content-center pt-3">
+                <figure class="section1-left">
+                    <img src="./imgs/jardines/absolutereality16-jardin3.jpg" alt="Imagen de un Jardín en miniatura">
+                </figure>
+            </div>
+
+        </div>
+        
+        <div class="row container-fluid d-flex justify-content-center align-items-center pt-3 pb-5 bg-custom2">
+            <div class="col-12 d-flex justify-content-center flex-wrap text-justify section2">
+                <div class="row">
+                    <h2>PERSONALIZA TU JARDÍN</h2>
+                </div>
+                
+                <div class="row">
+                    <p>¡Ahora puedes contactarnos y pedirnos tu jardín soñado!</p>
+                </div>
+
+                <div class="row container-fluid d-flex justify-content-center align-items-center carousel-width-custom">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        </div>
+
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="./imgs/jardines/rpg-jardin-ancho1.jpg" class="d-block w-100" alt="First slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./imgs/jardines/rpg-jardin-ancho2.jpg" class="d-block w-100" alt="Second slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./imgs/jardines/rpg-jardin-ancho3.jpg" class="d-block w-100" alt="Third slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./imgs/jardines/rpg-jardin-ancho4.jpg" class="d-block w-100" alt="Fourth slide">
+                          </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Anterior</span>
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Siguiente</span>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
 
+    <!-- Footer -->
     <footer>
-        <div>
-            <p>&COPY; 2023 MiniGarden</p>
-        </div>
-    
-        <div class="redes-sociales">
-            <a href="https://www.facebook.com" target="_blank"><img src="./imgs/rrss/facebook.png" alt="Ícono de Facebook"></a>
-            <a href="https://www.youtube.com" target="_blank"><img src="./imgs/rrss/youtube.png" alt="Ícono de Youtube"></a>
-            <a href="https://www.instagram.com" target="_blank"><img src="./imgs/rrss/instagram.png" alt="Ícono de Instagram"></a>      
+        <div class="container-fluid py-3">
+            <div class="row">
+                <div class="col-6 copyright">&COPY; 2023 MiniGarden</div>
+
+                <div class="col-6 redes-sociales">            
+                    <a href="https://www.facebook.com" target="_blank"><img src="./imgs/rrss/facebook.png" alt="Ícono de Facebook"></a>
+                    <a href="https://www.youtube.com" target="_blank"><img src="./imgs/rrss/youtube.png" alt="Ícono de Youtube"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="./imgs/rrss/instagram.png" alt="Ícono de Instagram"></a> 
+                </div>
+            </div>
         </div>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

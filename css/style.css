@@ -105,90 +105,159 @@ header li a{
 }
 
 /* ================================= MAIN: INDEX ================================= */
-.index main{
-    padding-top: 8rem;
-    display: flex;
-    flex-direction: column;
+.index .padding-custom{
+    padding-top: 140px;
 }
 
-/* SECCIÓN 1 */
-.container-sec1{
-    display: inline-flex;
-    margin-bottom: 60px;
-    margin-left: 10%;
+.index .bg-custom2{
+    background-color: #1ebf6c;;
 }
 
-/* Imagen */
-.img-sec1 img{
-    width: 350px;
-    border: 10px solid white;
+/* Section 1 */
+.index .section1-left img{
+    width: 30vw;
+    border: 8px solid white;
     border-radius: 25px;
 }
 
-/* Título y Descripción*/
-.text-sec1 {
-    margin-left: 5%;
-    padding-top: 40px;
-    color: white;
-    padding-right: 10%;
+.index .section1-right{
+    padding-left: 60px;
 }
-
-/* Título */
-.text-sec1 h1{
-    font-family: sans-serif;
-    font-size: 100px;
+.index .section1-right h1{
+    font-size: 8vw;
     color: white;
     text-shadow: 4px 4px 0px rgba(250, 250, 250, 0.5);
 }
-
-/* Descripción */
-.text-sec1 p{
+.index .section1-right p{
     font-family: sans-serif;
-    font-size: 50px;
-    padding-top: 40px;
+    font-size: 2.7vw;
     color: white;
 }
 
-/* SECCIÓN 2 */
-.container-sec2{
-    margin-bottom: 20px;
-}
-
-.img-sec2{
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-} 
-
-/* Imagen */
-.img-sec2 img{
-    width: 300px;
-    margin: 30px;
+/* Section 2 */
+.index .section2 img{
     border: 10px solid white;
-    border-radius: 25px;
+    border-radius: 10px;
 }
 
-/* Título y Descripción*/
-.text-sec2 {
-    padding-top: 30px;
-    text-align: center;
-    color: white;
-}
-
-/* Título */
-.text-sec2 h2{
-    font-family: sans-serif;
-    font-size: 100px;
+.index .section2 h2{
+    margin-top: 20px;
+    font-size: 7vw;
     color: white;
     text-shadow: 4px 4px 0px rgba(250, 250, 250, 0.5);
 }
-
-/* Descripción */
-.text-sec2 p{
+.index .section2 p{
+    margin-block: 20px 4rem;
     font-family: sans-serif;
-    font-size: 40px;
+    font-size: 2.4vw;
     color: white;
-    padding-top: 40px;
+}
+.index .carousel-width-custom{
+    width: 50%;
+}
+
+/* Resoluciones */
+@media (max-width: 991.98px){
+    .index .padding-custom{
+        padding-top: 110px;
+    }
+}
+
+@media (min-width: 767.98px) and (max-width: 1083.98px){
+    .index .section1-right{
+        padding-left: 35px;
+    }
+    .index .section1-right h1{
+        font-size: 8.5vw;
+    }
+    .index .section1-right p{
+        padding-top: 20px;
+        font-size: 2.8vw;
+    }
+
+    .index .section2 img{
+        border: 8px solid white;
+        border-radius: 10px;
+    }
+    .index .section2 p{
+        margin-block: 20px 3rem;
+        font-size: 3vw;
+    }
+}
+
+@media (min-width: 404.98px) and (max-width: 767.98px){
+    .index .section1-left img{
+        width: 250px;
+        border: 5px solid white;
+        border-radius: 25px;
+    }
+    .index .section1-right{
+        padding-left: 10px;
+    }
+    .index .section1-right h1{
+        font-size: 8vw;
+        text-align: center;
+    }
+    .index .section1-right p{
+        padding-top: 20px;
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    .index .section2 img{
+        border: 8px solid white;
+        border-radius: 10px;
+    }
+    .index .section2 h2{
+        font-size: 7vw;
+        text-align: center;
+    }
+    .index .section2 p{
+        margin-block: 20px 3rem;
+        font-size: 4vw;
+        text-align: center;
+    }
+    .index .carousel-width-custom{
+        width: 80vw;
+    }
+}
+
+@media (max-width: 404.98px){
+    .index .section1-left img{
+        width: 200px;
+        border: 5px solid white;
+        border-radius: 25px;
+    }
+    .index .section1-right{
+        padding-left: 3px;
+    }
+    .index .section1-right h1{
+        font-size: 10vw;
+        text-align: center;
+    }
+    .index .section1-right p{
+        padding-left: 20px;
+        padding-top: 20px;
+        font-size: 4.1vw;
+        text-align: center;
+    }
+
+    .index .section2 img{
+        border: 5px solid white;
+        border-radius: 10px;
+    }
+    .index .section2 h2{
+        font-size: 9vw;
+        text-align: center;
+    }
+    .index .section2 p{
+        margin-block: 20px 3rem;
+        font-size: 4.5vw;
+        text-align: center;
+    }
+    .index .carousel-width-custom{
+        width: 100vw;
+    }
 }
 
 /* ================================= MAIN: JARDINES ================================= */
