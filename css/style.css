@@ -353,7 +353,7 @@ header li a{
 }
 
 .faq .padding-custom{
-    padding-block: 140px;
+    padding-block: 140px 140px;
 }
 
 .faq .width-custom{
@@ -368,6 +368,10 @@ header li a{
 
 .faq .links:hover{
     color: rgba(5, 219, 1, 0.738);
+}
+
+.faq .margin-top-custom{
+    margin-top: 50px;
 }
 
 .faq .accordion-item-custom{
@@ -407,7 +411,11 @@ header li a{
 
 @media (max-width: 575.98px){
     .faq .padding-custom{
-        padding-top: 110px;
+        padding-block: 110px 240px;
+    }
+
+    .faq .margin-top-custom{
+        margin-top: 0px;
     }
 
     .faq .width-custom{
