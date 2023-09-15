@@ -13,6 +13,16 @@ html, body{
     height: 100%;
 }
 
+button {
+    padding: 10px 20px;
+    font-size: 15px;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
 /* ================================= HEADER ================================= */
 header a{
     font-family: BelgianoSerif;
@@ -282,6 +292,7 @@ header li a{
 }
 
 .jardines .jardin-custom {
+    width: 18rem;
     transition: all 0.25s;
   }
 
@@ -452,39 +463,35 @@ header li a{
 
 /* ================================= MAIN: CONTACTO ================================= */
 
-form {
-    max-width: 600px;
-    margin: 0 auto;
+.contacto hr{
+    border-top-width: 2px;
+    opacity: 0.5;
+    color: white;
 }
 
-label {
+.contacto form {
+    max-width: 600px;
+}
+
+.contacto label {
     display: block;
     margin-bottom: 5px;
     text-align: left;
     color: white;
 }
 
-input, textarea {
+.contacto input, .contacto textarea, .contacto .form-select-custom{
     font-family: sans-serif;
     width: 100%;
-    margin-bottom: 15px;
     padding: 8px;
     font-size: 15px;
     resize: none;
-}
-
-input::placeholder, textarea::placeholder{
-    font-size: 15px;
-}
-
-button {
-    padding: 15px 20px;
-    font-size: 15px;
-    color: black;
-    background-color: white;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    border-radius: 3px;
+}
+
+.contacto input::placeholder, .contacto textarea::placeholder, .contacto .form-select-custom{
+    font-size: 15px;
 }
 
 .contacto main{
@@ -502,13 +509,29 @@ button {
     text-shadow: 2px 2px 0px rgba(250, 250, 250, 0.5);
 }
 
+.contacto p{
+    color: white;
+}
+
+.contacto .form-select-custom{
+    margin-inline: 12px;
+    border-radius: 3px;
+}
+
 .contacto .padding-custom{
     padding-top: 140px;
+    padding-bottom: 20px;
 }
 
 @media (max-width: 991.98px){
     .contacto .padding-custom{
         padding-top: 110px;
+    }
+}
+
+@media (max-width: 374.98px){
+    .contacto .form-select-custom{
+        font-size: 13px;
     }
 }
 
