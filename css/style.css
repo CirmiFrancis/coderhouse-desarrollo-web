@@ -446,7 +446,7 @@ header li a{
 /* Section */
 .nosotros .section-text-left p{
     font-family: sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     text-align: justify;
     margin-left: 4%;
     color: white;
@@ -454,7 +454,7 @@ header li a{
 
 .nosotros .section-text-right p{
     font-family: sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     text-align: justify;
     margin-right: 4%;
     color: white;
