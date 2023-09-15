@@ -305,10 +305,11 @@ header li a{
     width: 18rem;
     transition: all 0.25s;
     border: 3px solid white;
-  }
+}
 
 .jardines .jardin-custom:hover {
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 @media (max-width: 991.98px){
