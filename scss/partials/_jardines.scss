@@ -21,7 +21,7 @@
         }
     }
 
-    .title-custom{
+    .title-custom, .price-custom{
         font-size: 30px;
         font-family: BelgianoSerif;
     }
@@ -29,11 +29,6 @@
     .desc-custom{
         font-size: 15px;
         font-family: sans-serif;
-    }
-    
-    .price-custom{
-        font-size: 30px;
-        font-family: BelgianoSerif;
     }
 
     @media (max-width: 991.98px){

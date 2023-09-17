@@ -1,14 +1,14 @@
-header a{
-    font-family: BelgianoSerif;
-}
-header li a{
-    font-family: ComfortaaLight;
+header{
+    a{
+        font-family: BelgianoSerif;
+    }
+
+    li a{
+        font-family: ComfortaaLight;
+    }
 }
 
-.nav-custom{
-    background-color: white;
-}
-.navbar-custom{
+.nav-custom, .navbar-custom{
     background-color: white;
 }
 
@@ -33,9 +33,10 @@ header li a{
 
 .enlace-custom{
     color: black;
-}
-.enlace-custom:hover{
-    color: gray;
+
+    &:hover{
+        color: gray;
+    }
 }
 
 #selected-page{
