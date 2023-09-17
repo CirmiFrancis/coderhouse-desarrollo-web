@@ -1,0 +1,23 @@
+footer{
+    background-color: white;
+}
+
+.copyright{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.redes-sociales img {
+    width: 50px;
+    padding-left: 10px;
+}
+
+@media (max-width: 375px) {
+    .copyright{
+        font-size: 14px;
+    }
+    .redes-sociales img {
+        width: 40px;
+    }
+}

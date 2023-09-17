@@ -1,0 +1,89 @@
+header a{
+    font-family: BelgianoSerif;
+}
+header li a{
+    font-family: ComfortaaLight;
+}
+
+.nav-custom{
+    background-color: white;
+}
+.navbar-custom{
+    background-color: white;
+}
+
+.logo{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+.logo-texto{
+    margin: 0;
+    font-size: 50px;
+}
+.logo-imagen {
+    width: 64px;
+}
+
+.ul-custom{
+    margin-right: 20px;
+    margin-top: 5px;
+    font-size: 17px;
+}
+
+.enlace-custom{
+    color: black;
+}
+.enlace-custom:hover{
+    color: gray;
+}
+
+#selected-page{
+    color: rgb(22, 218, 26);
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+    .logo{
+        margin-left: 10px;
+    }
+
+    .logo-texto{
+        font-size: 35px;
+    }
+
+    .ul-custom{
+        margin-right: 10px;
+        margin-top: 5px;
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+    .logo{
+        margin-left: 10px;
+    }   
+
+    .logo-texto{
+        font-size: 35px;
+    }   
+}
+
+@media (min-width: 349.98px) and (max-width: 575.98px){
+    .logo{
+        margin-left: 5px;
+    }
+
+    .logo-texto{
+        font-size: 35px;
+    }   
+}
+
+@media (max-width: 349.98px){
+    .logo{
+        margin-left: 5px;
+    }
+
+    .logo-texto{
+        font-size: 30px;
+    }   
+}
