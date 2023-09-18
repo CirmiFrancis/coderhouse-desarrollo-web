@@ -9,6 +9,8 @@
     <title>MiniGarden | Contacto</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Animation AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Custom style -->
     <link rel="stylesheet" href="../css/style.css">
     <!-- Icon -->
@@ -59,10 +61,10 @@
     <!-- Main-Form -->
     <main class="container-fluid padding-custom">
         <div class="row pb-5">
-            <div class="col"><h1>Contacto</h1></div>
+            <div class="col"><h1 data-aos="fade-down" data-aos-duration="500">Contacto</h1></div>
         </div>
 
-        <form class="container-fluid">
+        <form class="container-fluid" data-aos="zoom-out" data-aos-duration="500">
             <div class="row mb-4">
                 <div class="col">           
                     <label for="name">Nombre</label>
@@ -127,6 +129,9 @@
 
     <!-- Bootstrap JS -->
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <!-- Animation AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 
 </html>

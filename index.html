@@ -9,6 +9,8 @@
     <title>MiniGarden | Inicio</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Animation AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Custom style -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- Icon -->
@@ -59,7 +61,7 @@
     <!-- Main-Index -->
     <main class="container-fluid d-flex flex-column justify-content-center align-items-center px-0 padding-custom">
 
-        <div class="row container-fluid d-flex justify-content-center align-items-center pb-5">
+        <div class="row container-fluid d-flex justify-content-center align-items-center pb-5" data-aos="fade-down" data-aos-duration="1000">
 
             <div class="col-12 col-md-8 order-md-1 d-flex justify-content-center flex-wrap text-justify section1-right">
                 <div class="row">
@@ -78,7 +80,7 @@
 
         </div>
         
-        <div class="row container-fluid d-flex justify-content-center align-items-center pt-3 pb-5 bg-custom2">
+        <div class="row container-fluid d-flex justify-content-center align-items-center pt-3 pb-5 bg-custom2" data-aos="fade-up" data-aos-duration="1000">
             <div class="col-12 d-flex justify-content-center flex-wrap text-justify section2">
                 <div class="row">
                     <h2>PERSONALIZA TU JARDÍN</h2>
@@ -147,6 +149,9 @@
 
     <!-- Bootstrap JS -->
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- Animation AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 
 </html>

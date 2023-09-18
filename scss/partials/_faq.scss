@@ -18,8 +18,13 @@
     .accordion-item-custom{
         font-family: ComfortaaLight;
         color: black;
-        border: none;
+        border-bottom: 1px solid white;
         box-shadow: none;
+
+        &:focus{
+            border: none;
+            border-bottom-left-radius: 0%;
+        }
     }
 
     .accordion-header-custom{
@@ -51,6 +56,16 @@
         color: white;
         background-color: #1aa95f;
         box-shadow: none;
+
+        &:not(.collapsed){
+            box-shadow: none;
+        }
+    }
+
+    .accordion-collapse-custom{ /* evita que aparezcan las esquinas inferiores del último item del acordeón */
+        &:last-child{
+            border-radius: 0;            
+        }
     }
 
     .links{

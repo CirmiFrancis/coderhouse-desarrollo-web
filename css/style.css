@@ -1,4 +1,4 @@
-/* sass --watch scss:css */
+@charset "UTF-8";
 @font-face {
   font-family: BelgianoSerif;
   src: url("../fonts/belgiano_serif/Belgiano Serif 2.otf");
@@ -53,6 +53,7 @@ header li a {
 
 .nav-custom, .navbar-custom {
   background-color: white;
+  opacity: 0.95;
 }
 
 .logo {
@@ -340,8 +341,12 @@ header li a {
 .faq .accordion-item-custom {
   font-family: ComfortaaLight;
   color: black;
-  border: none;
+  border-bottom: 1px solid white;
   box-shadow: none;
+}
+.faq .accordion-item-custom:focus {
+  border: none;
+  border-bottom-left-radius: 0%;
 }
 .faq .accordion-header-custom {
   background-color: #1aa95f;
@@ -367,6 +372,13 @@ header li a {
   color: white;
   background-color: #1aa95f;
   box-shadow: none;
+}
+.faq .accordion-body-custom:not(.collapsed) {
+  box-shadow: none;
+}
+.faq .accordion-collapse-custom { /* evita que aparezcan las esquinas inferiores del último item del acordeón */ }
+.faq .accordion-collapse-custom:last-child {
+  border-radius: 0;
 }
 .faq .links {
   text-decoration: underline;

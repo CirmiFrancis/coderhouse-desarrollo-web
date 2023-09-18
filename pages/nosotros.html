@@ -9,6 +9,8 @@
     <title>MiniGarden | Nosotros</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Animation AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Custom style -->
     <link rel="stylesheet" href="../css/style.css">
     <!-- Icon -->
@@ -59,9 +61,9 @@
     <!-- Main-Text -->
     <main class="container-fluid d-flex flex-column justify-content-center align-items-center pb-5 padding-custom">
 
-        <h1 class="row pb-5">Sobre Nosotros</h1>
+        <h1 class="row pb-5" data-aos="fade-down" data-aos-duration="500">Sobre Nosotros</h1>
 
-        <div class="row container-fluid d-flex justify-content-center align-items-center mb-2">
+        <div class="row container-fluid d-flex justify-content-center align-items-center mb-2" data-aos="fade-left" data-aos-duration="500">
             <div class="col-12 col-lg-8 order-lg-0 d-flex flex-wrap section-text-left">
                 <p>
                     Bienvenido a MiniGarden, donde los sueños en miniatura se hacen realidad.
@@ -78,7 +80,7 @@
             </div>
         </div>
 
-        <div class="row container-fluid d-flex justify-content-center align-items-center">
+        <div class="row container-fluid d-flex justify-content-center align-items-center" data-aos="fade-right" data-aos-duration="500">
             <div class="col-12 col-lg-4 order-1 order-lg-0 d-flex justify-content-center">
                 <figure class="section-img">
                     <img src="../imgs/jardines/dreamshaper7-jardin7.jpg" alt="Imagen de un Jardín en miniatura" class="">
@@ -115,6 +117,9 @@
 
     <!-- Bootstrap JS -->
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <!-- Animation AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 
 </html>

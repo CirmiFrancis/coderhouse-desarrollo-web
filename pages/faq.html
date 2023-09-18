@@ -9,6 +9,8 @@
     <title>MiniGarden | FAQ</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Animation AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Custom style -->
     <link rel="stylesheet" href="../css/style.css">
     <!-- Icon -->
@@ -59,9 +61,9 @@
   <!-- Main-Accordions -->
   <main class="container-fluid padding-custom">
     
-      <h1>Preguntas Frecuentes</h1>
+      <h1 data-aos="fade-down" data-aos-duration="500">Preguntas Frecuentes</h1>
 
-      <div class="container-fluid width-custom">
+      <div class="container-fluid width-custom" data-aos="fade-up" data-aos-duration="500">
       
         <div class="accordion accordion-flush py-5" id="accordionFlush">
 
@@ -189,7 +191,7 @@
                 </button>
               </h2>
 
-              <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlush">
+              <div id="flush-collapseNine" class="accordion-collapse accordion-collapse-custom collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlush">
                 <div class="accordion-body accordion-body-custom">
                   Puedes contactarnos a través de la sección <a href="./contacto.html" class="links">Contacto</a>. ¡Responderemos tus consultas con gusto! 
                 </div>
@@ -219,6 +221,9 @@
 
   <!-- Bootstrap JS -->
   <script src="../js/bootstrap.bundle.min.js"></script>
+  <!-- Animation AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 
 </html>
