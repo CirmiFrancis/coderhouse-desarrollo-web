@@ -7,6 +7,7 @@
   font-family: ComfortaaLight;
   src: url("../fonts/comfortaa/Comfortaa-Light.ttf");
 }
+/* hice un partial de las variables porque quizás agrego más */
 * {
   margin: 0;
   padding: 0;
@@ -326,6 +327,7 @@ header li a {
   padding-block: 140px 140px;
 }
 .faq h1 {
+  /* hice un partial de los mixin porque quizás agrego más */
   font-size: 64px;
   color: white;
   text-align: center;
@@ -413,6 +415,7 @@ header li a {
   padding-top: 140px;
 }
 .nosotros h1 {
+  /* hice un partial de los mixin porque quizás agrego más */
   font-size: 64px;
   color: white;
   text-align: center;
@@ -482,6 +485,7 @@ header li a {
   padding-bottom: 20px;
 }
 .contacto h1 {
+  /* hice un partial de los mixin porque quizás agrego más */
   font-size: 64px;
   color: white;
   text-align: center;
