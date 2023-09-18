@@ -28,13 +28,13 @@
     }
 
     .accordion-header-custom{
-        background-color: #1aa95f;
+        background-color: $color-fondo;
     }
     
     .accordion-button-custom{
         font-size: 20px;
         color: white;
-        background-color: #1aa95f;
+        background-color: $color-fondo;
     
         &:active{
             background-color: rgba(0, 0, 0, 0.1);
@@ -48,13 +48,17 @@
             background-color: rgba(0, 0, 0, 0.1);
             box-shadow: none;
         }
+
+        &::after{
+            background-image: url(/imgs/arrow-down.svg);
+        }
     }
     
     .accordion-body-custom{
         font-size: 18px;
         text-align: justify;
         color: white;
-        background-color: #1aa95f;
+        background-color: $color-fondo;
         box-shadow: none;
 
         &:not(.collapsed){
