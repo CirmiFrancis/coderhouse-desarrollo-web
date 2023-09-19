@@ -50,7 +50,7 @@
         }
 
         &::after{
-            background-image: url(/imgs/arrow-down.svg);
+            background-image: url(/imgs/flecha.png);
         }
     }
     
@@ -66,7 +66,7 @@
         }
     }
 
-    .accordion-collapse-custom{ /* evita que aparezcan las esquinas inferiores del último item del acordeón */
+    .accordion-collapse-custom{
         &:last-child{
             border-radius: 0;            
         }
