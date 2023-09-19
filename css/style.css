@@ -369,7 +369,7 @@ header li a {
   box-shadow: none;
 }
 .faq .accordion-button-custom::after {
-  background-image: url(../../imgs/flecha.png);
+  background-image: url(../../imgs/otros/flecha.png);
 }
 .faq .accordion-body-custom {
   font-size: 18px;
