@@ -1,2 +1,4 @@
 # Ignorar archivos
 .DS_Store
+imgs/.DS_Store
+fonts/.DS_Store

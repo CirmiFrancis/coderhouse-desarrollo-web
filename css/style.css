@@ -381,7 +381,6 @@ header li a {
 .faq .accordion-body-custom:not(.collapsed) {
   box-shadow: none;
 }
-.faq .accordion-collapse-custom { /* evita que aparezcan las esquinas inferiores del último item del acordeón */ }
 .faq .accordion-collapse-custom:last-child {
   border-radius: 0;
 }
