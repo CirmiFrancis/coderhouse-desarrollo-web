@@ -368,9 +368,6 @@ header li a {
   background-color: rgba(0, 0, 0, 0.1);
   box-shadow: none;
 }
-.faq .accordion-button-custom::after {
-  background-image: url(../../imgs/otros/flecha.png);
-}
 .faq .accordion-body-custom {
   font-size: 18px;
   text-align: justify;
