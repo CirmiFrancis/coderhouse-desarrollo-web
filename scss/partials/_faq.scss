@@ -20,11 +20,6 @@
         color: black;
         border-bottom: 1px solid white;
         box-shadow: none;
-
-        &:focus{
-            border: none;
-            border-bottom-left-radius: 0%;
-        }
     }
 
     .accordion-header-custom{
@@ -35,10 +30,6 @@
         font-size: 20px;
         color: white;
         background-color: $color-fondo;
-    
-        &:active{
-            background-color: rgba(0, 0, 0, 0.1);
-        }
     
         &:focus{
             box-shadow: none;
@@ -69,8 +60,8 @@
     }
 
     .links{
-        text-decoration: underline;
         font-weight: bold;
+        text-decoration: underline;
         color: rgb(26, 255, 0);
         
         &:hover{
@@ -82,23 +73,18 @@
         .padding-custom{
             padding-block: 110px 240px;
         }
-    
         .margin-top-custom{
             margin-top: 0px;
         }
-    
         .width-custom{
             width: 100%;
         }
-    
         h1{
             font-size: 48px;
         }
-    
         .accordion-button-custom{
             font-size: 18px;
         }
-    
         .accordion-body-custom{
             font-size: 16px;
         }

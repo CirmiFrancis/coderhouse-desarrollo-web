@@ -6,86 +6,98 @@ header{
     li a{
         font-family: ComfortaaLight;
     }
-}
 
-.nav-custom, .navbar-custom{
-    background-color: white;
-    opacity: 0.95;
-}
-
-.logo{
-    margin-left: 20px;
-    display: flex;
-    align-items: center;
-}
-.logo-texto{
-    margin: 0;
-    font-size: 50px;
-}
-.logo-imagen {
-    width: 64px;
-}
-
-.ul-custom{
-    margin-right: 20px;
-    margin-top: 5px;
-    font-size: 17px;
-}
-
-.enlace-custom{
-    color: black;
-
-    &:hover{
-        color: gray;
+    .nav-custom, .navbar-custom{
+        background-color: white;
+        opacity: 0.95;
     }
-}
 
-#selected-page{
-    color: rgb(22, 218, 26);
-}
-
-@media (min-width: 768px) and (max-width: 991.98px){
     .logo{
-        margin-left: 10px;
-    }
+        display: flex;
+        margin-left: 20px;
+        align-items: center;
 
-    .logo-texto{
-        font-size: 35px;
+        .logo-texto{
+            font-size: 50px;
+            margin: 0;
+        }
+    
+        .logo-imagen{
+            width: 64px;
+        }
     }
 
     .ul-custom{
-        margin-right: 10px;
-        margin-top: 5px;
-        font-size: 15px;
-    }
-}
+        font-size: 17px;
+        margin: 5px 20px 0 0;
 
-@media (min-width: 576px) and (max-width: 767.98px){
-    .logo{
-        margin-left: 10px;
-    }   
-
-    .logo-texto{
-        font-size: 35px;
-    }   
-}
-
-@media (min-width: 349.98px) and (max-width: 575.98px){
-    .logo{
-        margin-left: 5px;
+        .enlace-custom{
+            color: black;
+    
+            &:hover{
+                color: gray;
+            }
+        }
     }
 
-    .logo-texto{
-        font-size: 35px;
-    }   
-}
-
-@media (max-width: 349.98px){
-    .logo{
-        margin-left: 5px;
+    #selected-page{
+        color: rgb(22, 218, 26);
     }
 
-    .logo-texto{
-        font-size: 30px;
-    }   
+    @media (min-width: 768px) and (max-width: 991.98px){
+        .logo{
+            margin-left: 10px;
+
+            .logo-texto{
+                font-size: 35px;
+            }
+
+            .logo-imagen{
+                width: 56px;
+            }
+        }
+        .ul-custom{
+            font-size: 15px;
+            margin: 5px 10px 0 0;
+        }
+    }
+    @media (min-width: 576px) and (max-width: 767.98px){
+        .logo{
+            margin-left: 10px;
+
+            .logo-texto{
+                font-size: 35px;
+            } 
+
+            .logo-imagen{
+                width: 48px;
+            }
+        }   
+    }
+    @media (min-width: 349.98px) and (max-width: 575.98px){
+        .logo{
+            margin-left: 5px;
+
+            .logo-texto{
+                font-size: 35px;
+            }   
+
+            .logo-imagen{
+                width: 48px;
+            }
+        }
+    }
+    @media (max-width: 349.98px){
+        .logo{
+            margin-left: 5px;
+
+            .logo-texto{
+                font-size: 30px;
+            }   
+
+            .logo-imagen{
+                width: 40px;
+            }
+        }
+    }
 }

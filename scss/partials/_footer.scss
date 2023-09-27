@@ -8,16 +8,16 @@ footer{
     align-items: center;
 }
 
-.redes-sociales img {
+.redes-sociales img{
     width: 50px;
     padding-left: 10px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 375px){
     .copyright{
         font-size: 14px;
     }
-    .redes-sociales img {
+    .redes-sociales img{
         width: 40px;
     }
 }

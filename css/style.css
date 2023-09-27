@@ -36,8 +36,8 @@ html, body {
 }
 
 button {
-  padding: 10px 20px;
   font-size: 15px;
+  padding: 10px 20px;
   color: black;
   background-color: white;
   border: none;
@@ -51,81 +51,84 @@ header a {
 header li a {
   font-family: ComfortaaLight;
 }
-
-.nav-custom, .navbar-custom {
+header .nav-custom, header .navbar-custom {
   background-color: white;
   opacity: 0.95;
 }
-
-.logo {
-  margin-left: 20px;
+header .logo {
   display: flex;
+  margin-left: 20px;
   align-items: center;
 }
-
-.logo-texto {
-  margin: 0;
+header .logo .logo-texto {
   font-size: 50px;
+  margin: 0;
 }
-
-.logo-imagen {
+header .logo .logo-imagen {
   width: 64px;
 }
-
-.ul-custom {
-  margin-right: 20px;
-  margin-top: 5px;
+header .ul-custom {
   font-size: 17px;
+  margin: 5px 20px 0 0;
 }
-
-.enlace-custom {
+header .ul-custom .enlace-custom {
   color: black;
 }
-.enlace-custom:hover {
+header .ul-custom .enlace-custom:hover {
   color: gray;
 }
-
-#selected-page {
+header #selected-page {
   color: rgb(22, 218, 26);
 }
-
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .logo {
+  header .logo {
     margin-left: 10px;
   }
-  .logo-texto {
+  header .logo .logo-texto {
     font-size: 35px;
   }
-  .ul-custom {
-    margin-right: 10px;
-    margin-top: 5px;
+  header .logo .logo-imagen {
+    width: 56px;
+  }
+  header .ul-custom {
     font-size: 15px;
+    margin: 5px 10px 0 0;
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .logo {
+  header .logo {
     margin-left: 10px;
   }
-  .logo-texto {
+  header .logo .logo-texto {
     font-size: 35px;
+  }
+  header .logo .logo-imagen {
+    width: 48px;
   }
 }
 @media (min-width: 349.98px) and (max-width: 575.98px) {
-  .logo {
+  header .logo {
     margin-left: 5px;
   }
-  .logo-texto {
+  header .logo .logo-texto {
     font-size: 35px;
+  }
+  header .logo .logo-imagen {
+    width: 48px;
   }
 }
 @media (max-width: 349.98px) {
-  .logo {
+  header .logo {
     margin-left: 5px;
   }
-  .logo-texto {
+  header .logo .logo-texto {
     font-size: 30px;
   }
+  header .logo .logo-imagen {
+    width: 40px;
+  }
 }
+
 .index .padding-custom {
   padding-top: 140px;
 }
@@ -151,15 +154,15 @@ header li a {
   background-color: #1ebf6c;
 }
 .index .section2 h2 {
-  margin-top: 20px;
   font-size: 7vw;
+  margin-top: 20px;
   color: white;
   text-shadow: 4px 4px 0px rgba(250, 250, 250, 0.5);
 }
 .index .section2 p {
-  margin-block: 20px 4rem;
   font-family: sans-serif;
   font-size: 2.4vw;
+  margin-block: 20px 4rem;
   color: white;
 }
 .index .section2 img {
@@ -182,16 +185,16 @@ header li a {
     font-size: 8.5vw;
   }
   .index .section1-right p {
-    padding-top: 20px;
     font-size: 2.8vw;
+    padding-top: 20px;
   }
   .index .section2 img {
     border: 8px solid white;
     border-radius: 10px;
   }
   .index .section2 p {
-    margin-block: 20px 3rem;
     font-size: 3vw;
+    margin-block: 20px 3rem;
   }
 }
 @media (min-width: 404.98px) and (max-width: 767.98px) {
@@ -209,8 +212,8 @@ header li a {
     text-shadow: 2px 2px 0px rgba(250, 250, 250, 0.5);
   }
   .index .section1-right p {
-    padding-top: 20px;
     font-size: 4vw;
+    padding-top: 20px;
     text-align: center;
   }
   .index .section2 img {
@@ -223,8 +226,8 @@ header li a {
     text-shadow: 2px 2px 0px rgba(250, 250, 250, 0.5);
   }
   .index .section2 p {
-    margin-block: 20px 3rem;
     font-size: 4vw;
+    margin-block: 20px 3rem;
     text-align: center;
   }
   .index .carousel-width-custom {
@@ -246,9 +249,8 @@ header li a {
     text-shadow: 2px 2px 0px rgba(250, 250, 250, 0.5);
   }
   .index .section1-right p {
-    padding-left: 20px;
-    padding-top: 20px;
     font-size: 4.1vw;
+    padding: 20px 0 0 10px;
     text-align: center;
   }
   .index .section2 img {
@@ -261,8 +263,8 @@ header li a {
     text-shadow: 2px 2px 0px rgba(250, 250, 250, 0.5);
   }
   .index .section2 p {
-    margin-block: 20px 3rem;
     font-size: 4.5vw;
+    margin-block: 20px 3rem;
     text-align: center;
   }
   .index .carousel-width-custom {
@@ -289,12 +291,12 @@ header li a {
   cursor: pointer;
 }
 .jardines .title-custom, .jardines .price-custom {
-  font-size: 30px;
   font-family: BelgianoSerif;
+  font-size: 30px;
 }
 .jardines .desc-custom {
-  font-size: 15px;
   font-family: sans-serif;
+  font-size: 15px;
 }
 @media (max-width: 991.98px) {
   .jardines .padding-custom {
@@ -346,10 +348,6 @@ header li a {
   border-bottom: 1px solid white;
   box-shadow: none;
 }
-.faq .accordion-item-custom:focus {
-  border: none;
-  border-bottom-left-radius: 0%;
-}
 .faq .accordion-header-custom {
   background-color: #1aa95f;
 }
@@ -357,9 +355,6 @@ header li a {
   font-size: 20px;
   color: white;
   background-color: #1aa95f;
-}
-.faq .accordion-button-custom:active {
-  background-color: rgba(0, 0, 0, 0.1);
 }
 .faq .accordion-button-custom:focus {
   box-shadow: none;
@@ -382,8 +377,8 @@ header li a {
   border-radius: 0;
 }
 .faq .links {
-  text-decoration: underline;
   font-weight: bold;
+  text-decoration: underline;
   color: rgb(26, 255, 0);
 }
 .faq .links:hover {
@@ -421,33 +416,32 @@ header li a {
   text-decoration: underline;
   text-shadow: 2px 2px 0px rgba(250, 250, 250, 0.5);
 }
-.nosotros .section-text, .nosotros .section-text-left p, .nosotros .section-text-right p {
+.nosotros .section-text {
   font-family: sans-serif;
   font-size: 25px;
   text-align: justify;
-  color: white;
 }
-.nosotros .section-text-left p, .nosotros .section-text-right p {
+.nosotros .section-text p {
   margin-inline: 5%;
+  color: white;
 }
 .nosotros .section-img img {
   width: 25vw;
+  margin-bottom: 0px;
   border: 5px solid white;
   border-radius: 30px;
-  margin-bottom: 0px;
 }
 @media (max-width: 991.98px) {
   .nosotros .padding-custom {
     padding-top: 110px;
   }
-  .nosotros .section-text-left, .nosotros .section-text-right, .nosotros .section-img img {
+  .nosotros .section-text, .nosotros .section-img img {
     margin-bottom: 50px;
   }
 }
 @media (min-width: 404.98px) and (max-width: 767.98px) {
   .nosotros .section-img img {
     width: 250px;
-    border: 5px solid white;
     border-radius: 25px;
   }
 }
@@ -465,20 +459,14 @@ header li a {
   }
   .nosotros .section-img img {
     width: 200px;
-    border: 5px solid white;
     border-radius: 25px;
   }
 }
 
 .contacto main {
-  padding-top: 100px;
-  padding-bottom: 60px;
   font-family: sans-serif;
   text-align: center;
-}
-.contacto .padding-custom {
-  padding-top: 140px;
-  padding-bottom: 20px;
+  padding-block: 140px 20px;
 }
 .contacto h1 {
   /* hice un partial de los mixin porque quizás agrego más */
@@ -497,39 +485,31 @@ header li a {
   text-align: left;
   color: white;
 }
-.contacto input, .contacto textarea {
-  font-family: sans-serif;
+.contacto input, .contacto textarea, .contacto .form-select-custom {
   width: 100%;
   padding: 8px;
   font-size: 15px;
+  font-family: sans-serif;
   resize: none;
   border: none;
   border-radius: 3px;
 }
-.contacto input::placeholder, .contacto textarea::placeholder {
+.contacto input::placeholder, .contacto textarea::placeholder, .contacto .form-select-custom::placeholder {
   font-size: 15px;
 }
 .contacto hr {
-  border-top-width: 2px;
+  border-top: 2px solid white;
   opacity: 0.5;
-  color: white;
-}
-.contacto .form-select-custom {
-  width: 100%;
-  font-family: sans-serif;
-  font-size: 15px;
-  margin-inline: 12px;
-  padding: 8px;
-  resize: none;
-  border: none;
-  border-radius: 3px;
 }
 .contacto p {
   color: white;
 }
+.contacto .form-select-custom {
+  margin-inline: 12px;
+}
 @media (max-width: 991.98px) {
-  .contacto .padding-custom {
-    padding-top: 110px;
+  .contacto main {
+    padding-block: 110px 20px;
   }
 }
 @media (max-width: 374.98px) {

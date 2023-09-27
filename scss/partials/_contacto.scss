@@ -1,14 +1,8 @@
 .contacto{
     main{
-        padding-top: 100px;
-        padding-bottom: 60px;
         font-family: sans-serif;
         text-align: center;
-    }
-
-    .padding-custom{
-        padding-top: 140px;
-        padding-bottom: 20px;
+        padding-block: 140px 20px;
     }
 
     h1{
@@ -26,11 +20,11 @@
         color: white;
     }
 
-    input, textarea{
-        font-family: sans-serif;
+    input, textarea, .form-select-custom{
         width: 100%;
         padding: 8px;
         font-size: 15px;
+        font-family: sans-serif;
         resize: none;
         border: none;
         border-radius: 3px;
@@ -41,29 +35,21 @@
     }
 
     hr{
-        border-top-width: 2px;
+        border-top: 2px solid white;
         opacity: 0.5;
-        color: white;
-    }
-
-    .form-select-custom{
-        width: 100%;
-        font-family: sans-serif;
-        font-size: 15px;
-        margin-inline: 12px;
-        padding: 8px;
-        resize: none;
-        border: none;
-        border-radius: 3px;
     }
 
     p{
         color: white;
     }
 
+    .form-select-custom{
+        margin-inline: 12px;
+    }
+
     @media (max-width: 991.98px){
-        .padding-custom{
-            padding-top: 110px;
+        main{
+            padding-block: 110px 20px;
         }
     }
     @media (max-width: 374.98px){
