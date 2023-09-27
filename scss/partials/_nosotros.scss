@@ -14,14 +14,7 @@
         color: white;
     }
 
-    .section-text-left{
-        p{
-            @extend .section-text;
-            margin-inline: 5%;
-        }
-    }
-
-    .section-text-right{
+    .section-text-left, .section-text-right{
         p{
             @extend .section-text;
             margin-inline: 5%;
