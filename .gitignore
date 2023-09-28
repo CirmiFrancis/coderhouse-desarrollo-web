@@ -1,4 +1,4 @@
 # Ignorar archivos
 .DS_Store
-imgs/.DS_Store
-fonts/.DS_Store
+assets/media/imgs/.DS_Store
+assets/fonts/.DS_Store
