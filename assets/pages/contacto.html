@@ -68,41 +68,41 @@
             <div class="col"><h1 data-aos="fade-down" data-aos-duration="500">Contacto</h1></div>
         </div>
 
-        <form class="container-fluid" data-aos="fade-up" data-aos-duration="500">
+        <form action="https://formspree.io/f/xdorpoar" method="post" class="container-fluid" data-aos="fade-up" data-aos-duration="500">
             <div class="row mb-4">
                 <div class="col">           
                     <label for="name">Nombre</label>
-                    <input type="text" id="name" placeholder="Ej: Juan Fernández">
+                    <input name="name" type="text" id="name" placeholder="Ej: Juan Fernández">
                 </div>
             </div>
             <div class="row mb-4"">
                 <div class="col">
                     <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Ej: juanfernandez@gmail.com">
+                    <input name="email" type="email" id="email" placeholder="Ej: juanfernandez@gmail.com">
                 </div>
             </div>
             <div class="row mb-5"">
                 <div class="col">
                     <label for="phone">Teléfono (opcional)</label>
-                    <input type="tel" id="phone" placeholder="Ej: +54 11 1234-5678">
+                    <input name="phone" type="tel" id="phone" placeholder="Ej: +54 11 1234-5678">
                 </div>
             </div>
 
-    <hr>
+            <hr>
             
             <div class="row mt-5">
                 <p class="mb-1 text-start">Consulta</p>
-                <select class="form-select form-select-custom col" aria-label="Default select example">
-                    <option selected>Elige el motivo</option>
-                    <option value="1">*Tengo una DUDA</option>
-                    <option value="2">*Quiero un JARDÍN PERSONALIZADO</option>
-                    <option value="3">*Solicito un REEMBOLSO</option>
+                <select name="title" class="form-select form-select-custom col" aria-label="Default select example">
+                    <option selected disabled>Elige el motivo</option>
+                    <option value="Duda">*Tengo una DUDA</option>
+                    <option value="Jardín Personalizado">*Quiero un JARDÍN PERSONALIZADO</option>
+                    <option value="Reembolso">*Solicito un REEMBOLSO</option>
                 </select>
             </div>
 
             <div class="row mt-4">
                 <div class="col">
-                    <textarea id="mensaje" cols="60" rows="10" placeholder="Escribe un mensaje..."></textarea>
+                    <textarea name="message" id="mensaje" cols="60" rows="10" placeholder="Escribe un mensaje..."></textarea>
                 </div>
             </div>
             <div class="row mt-4">
