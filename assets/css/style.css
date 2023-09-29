@@ -356,6 +356,9 @@ header #selected-page {
   background-color: #138044;
   box-shadow: none;
 }
+.faq .accordion-button-custom::after {
+  background-image: url(../media/imgs/otros/flecha.png);
+}
 .faq .accordion-body-custom {
   font-size: 18px;
   text-align: justify;

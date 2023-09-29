@@ -36,6 +36,10 @@
             background-color: #138044;
             box-shadow: none;
         }
+
+        &::after{
+            background-image: url(../media/imgs/otros/flecha.png);
+        }
     }
     
     .accordion-body-custom{
