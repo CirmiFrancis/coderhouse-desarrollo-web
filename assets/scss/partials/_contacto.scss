@@ -6,7 +6,7 @@
     }
 
     h1{
-        @include h1-faq-nos-con;
+        @include h1-jar-faq-nos-con;
     }
 
     form{
@@ -17,6 +17,7 @@
         display: block;
         margin-bottom: 5px;
         text-align: left;
+        text-shadow: 1px 1px 1px black;
         color: white;
     }
 
@@ -40,6 +41,7 @@
     }
 
     p{
+        text-shadow: 1px 1px 1px black;
         color: white;
     }
 
@@ -62,9 +64,12 @@
 
     @media (max-width: 991.98px){
         main{
-            padding-block: 110px 20px;
+            padding-block: 110px 40px;
         }
-    }
+        h1{
+            font-size: 48px;
+        }
+    }  
     @media (max-width: 374.98px){
         input, textarea, .form-select-custom{
             font-size: 13px;

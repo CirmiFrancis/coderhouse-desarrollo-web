@@ -4,7 +4,7 @@
     }
 
     h1{
-        @include h1-faq-nos-con;
+        @include h1-jar-faq-nos-con;
     }
 
     .width-custom{
@@ -24,6 +24,7 @@
     
     .accordion-button-custom{
         font-size: 20px;
+        text-shadow: 1px 1px 1px black;
         color: white;
         background-color: $color-fondo;
     
@@ -40,6 +41,7 @@
     .accordion-body-custom{
         font-size: 18px;
         text-align: justify;
+        text-shadow: 1px 1px 1px black;
         color: white;
         background-color: #179951;
     }
@@ -59,24 +61,41 @@
         }
     }
 
+    @media (max-width: 991.98px){
+        .padding-custom{
+            padding-top: 110px;
+        }
+        h1{
+            font-size: 48px;
+        }
+        .width-custom{
+            width: 90%;
+        }
+    } 
     @media (max-width: 575.98px){
         .padding-custom{
-            padding-block: 110px 240px;
-        }
-        .margin-top-custom{
-            margin-top: 0px;
+            padding-top: 110px;
         }
         .width-custom{
             width: 100%;
         }
         h1{
-            font-size: 48px;
+            font-size: 40px;
+            margin-inline: 5%;
         }
         .accordion-button-custom{
             font-size: 18px;
         }
         .accordion-body-custom{
             font-size: 16px;
+        }
+    }
+    @media (max-width: 404.98px){
+        .accordion-button-custom{
+            font-size: 16px;
+        }
+        .accordion-body-custom{
+            font-size: 14px;
         }
     }
 } 

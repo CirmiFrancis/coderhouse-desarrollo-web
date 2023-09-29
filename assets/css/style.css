@@ -299,6 +299,9 @@ header #selected-page {
   .jardines .padding-custom {
     padding-top: 110px;
   }
+  .jardines h1 {
+    font-size: 48px;
+  }
 }
 @media (min-width: 767.98px) and (max-width: 967.98px) {
   .jardines .title-custom {
@@ -311,14 +314,9 @@ header #selected-page {
     font-size: 20px;
   }
 }
-@media (min-width: 424.98px) and (max-width: 767.98px) {
-  .jardines h1 {
-    font-size: 80px;
-  }
-}
-@media (max-width: 424.98px) {
-  .jardines h1 {
-    font-size: 60px;
+@media (max-width: 374.98px) {
+  .jardines .jardin-custom {
+    width: 15rem;
   }
 }
 
@@ -347,6 +345,7 @@ header #selected-page {
 }
 .faq .accordion-button-custom {
   font-size: 20px;
+  text-shadow: 1px 1px 1px black;
   color: white;
   background-color: #1AA95F;
 }
@@ -360,6 +359,7 @@ header #selected-page {
 .faq .accordion-body-custom {
   font-size: 18px;
   text-align: justify;
+  text-shadow: 1px 1px 1px black;
   color: white;
   background-color: #179951;
 }
@@ -373,24 +373,41 @@ header #selected-page {
 .faq .links:hover {
   text-decoration: underline;
 }
+@media (max-width: 991.98px) {
+  .faq .padding-custom {
+    padding-top: 110px;
+  }
+  .faq h1 {
+    font-size: 48px;
+  }
+  .faq .width-custom {
+    width: 90%;
+  }
+}
 @media (max-width: 575.98px) {
   .faq .padding-custom {
-    padding-block: 110px 240px;
-  }
-  .faq .margin-top-custom {
-    margin-top: 0px;
+    padding-top: 110px;
   }
   .faq .width-custom {
     width: 100%;
   }
   .faq h1 {
-    font-size: 48px;
+    font-size: 40px;
+    margin-inline: 5%;
   }
   .faq .accordion-button-custom {
     font-size: 18px;
   }
   .faq .accordion-body-custom {
     font-size: 16px;
+  }
+}
+@media (max-width: 404.98px) {
+  .faq .accordion-button-custom {
+    font-size: 16px;
+  }
+  .faq .accordion-body-custom {
+    font-size: 14px;
   }
 }
 
@@ -417,7 +434,7 @@ header #selected-page {
   color: white;
 }
 .nosotros .section-img img {
-  width: 25vw;
+  width: 23vw;
   margin-bottom: 0px;
   border: 3px solid white;
   border-radius: 10px;
@@ -429,35 +446,54 @@ header #selected-page {
 .nosotros .links:hover {
   text-decoration: underline;
 }
+@media (min-width: 1440.98px) {
+  .nosotros .section-text p {
+    font-size: 1.5vw;
+  }
+  .nosotros .section-img img {
+    width: 24vw;
+  }
+}
+@media (min-width: 991.98px) and (max-width: 1440.98px) {
+  .nosotros .section-text p {
+    font-size: 1.5vw;
+  }
+  .nosotros .section-img img {
+    width: 23vw;
+  }
+}
 @media (max-width: 991.98px) {
   .nosotros .padding-custom {
     padding-top: 110px;
   }
+  .nosotros h1 {
+    font-size: 48px;
+  }
   .nosotros .section-text, .nosotros .section-img img {
     margin-bottom: 50px;
   }
-}
-@media (min-width: 404.98px) and (max-width: 767.98px) {
   .nosotros .section-img img {
-    width: 250px;
-    border-radius: 25px;
+    width: 38vw;
   }
 }
-@media (min-width: 405.98px) and (max-width: 575.98px) {
+@media (min-width: 404.98px) and (max-width: 767.98px) {
   .nosotros h1 {
-    font-size: 48px;
+    margin-inline: 5%;
+  }
+  .nosotros .section-img img {
+    width: 60vw;
   }
 }
 @media (max-width: 404.98px) {
   .nosotros h1 {
     font-size: 40px;
+    margin-inline: 5%;
   }
-  .nosotros .section-text-left p, .nosotros .section-text-right p {
-    font-size: 15px;
+  .nosotros .section-text p {
+    font-size: 16px;
   }
   .nosotros .section-img img {
-    width: 200px;
-    border-radius: 25px;
+    width: 70vw;
   }
 }
 
@@ -481,6 +517,7 @@ header #selected-page {
   display: block;
   margin-bottom: 5px;
   text-align: left;
+  text-shadow: 1px 1px 1px black;
   color: white;
 }
 .contacto input, .contacto textarea, .contacto .form-select-custom {
@@ -500,6 +537,7 @@ header #selected-page {
   opacity: 0.5;
 }
 .contacto p {
+  text-shadow: 1px 1px 1px black;
   color: white;
 }
 .contacto .form-select-custom {
@@ -518,7 +556,10 @@ header #selected-page {
 }
 @media (max-width: 991.98px) {
   .contacto main {
-    padding-block: 110px 20px;
+    padding-block: 110px 40px;
+  }
+  .contacto h1 {
+    font-size: 48px;
   }
 }
 @media (max-width: 374.98px) {
