@@ -30,7 +30,7 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: #1aa95f;
 }
 
 main {
@@ -520,6 +520,7 @@ header #selected-page {
 }
 
 footer {
+  margin-top: auto;
   background-color: white;
 }
 
