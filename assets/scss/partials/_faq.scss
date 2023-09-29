@@ -1,6 +1,6 @@
 .faq{
     .padding-custom{
-        padding-block: 140px 140px;
+        padding-top: 140px;
     }
 
     h1{
@@ -9,10 +9,6 @@
 
     .width-custom{
         width: 75%;
-    }
-
-    .margin-top-custom{
-        margin-top: 50px;
     }
 
     .accordion-item-custom{
@@ -36,7 +32,7 @@
         }
     
         &:not(.collapsed){
-            background-color: rgba(0, 0, 0, 0.1);
+            background-color: #138044;
             box-shadow: none;
         }
     }
@@ -45,12 +41,7 @@
         font-size: 18px;
         text-align: justify;
         color: white;
-        background-color: $color-fondo;
-        box-shadow: none;
-
-        &:not(.collapsed){
-            box-shadow: none;
-        }
+        background-color: #179951;
     }
 
     .accordion-collapse-custom{
@@ -61,11 +52,10 @@
 
     .links{
         font-weight: bold;
-        text-decoration: underline;
-        color: rgb(26, 255, 0);
+        color: #A2FF00;
         
         &:hover{
-            color: rgba(5, 219, 1, 0.738);
+            text-decoration: underline;
         }
     }
 

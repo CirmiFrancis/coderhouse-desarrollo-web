@@ -1,13 +1,15 @@
-@charset "UTF-8";
 @font-face {
   font-family: BelgianoSerif;
-  src: url("../fonts/belgiano_serif/Belgiano Serif 2.otf");
+  src: url("../fonts/BelgianoSerif/Belgiano-Serif-2.otf");
 }
 @font-face {
   font-family: ComfortaaLight;
-  src: url("../fonts/comfortaa/Comfortaa-Light.ttf");
+  src: url("../fonts/Comfortaa/static/Comfortaa-Light.ttf");
 }
-/* hice un partial de las variables porque quizás agrego más */
+@font-face {
+  font-family: MontserratRegular;
+  src: url("../fonts/Montserrat/static/Montserrat-Regular.ttf");
+}
 * {
   margin: 0;
   padding: 0;
@@ -30,11 +32,11 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
-  background-color: #1aa95f;
+  background-color: #1AA95F;
 }
 
 main {
-  background-color: #1aa95f;
+  background-color: #1AA95F;
 }
 
 header a {
@@ -318,21 +320,18 @@ header #selected-page {
 }
 
 .faq .padding-custom {
-  padding-block: 140px 140px;
+  padding-top: 140px;
 }
 .faq h1 {
-  /* hice un partial de los mixin porque quizás agrego más */
-  font-size: 64px;
+  font-family: sans-serif;
+  font-size: 5vw;
   color: white;
   text-align: center;
   text-decoration: underline;
-  text-shadow: 2px 2px 0px rgba(250, 250, 250, 0.5);
+  text-shadow: 2px 2px 0px black;
 }
 .faq .width-custom {
   width: 75%;
-}
-.faq .margin-top-custom {
-  margin-top: 50px;
 }
 .faq .accordion-item-custom {
   font-family: ComfortaaLight;
@@ -341,40 +340,35 @@ header #selected-page {
   box-shadow: none;
 }
 .faq .accordion-header-custom {
-  background-color: #1aa95f;
+  background-color: #1AA95F;
 }
 .faq .accordion-button-custom {
   font-size: 20px;
   color: white;
-  background-color: #1aa95f;
+  background-color: #1AA95F;
 }
 .faq .accordion-button-custom:focus {
   box-shadow: none;
 }
 .faq .accordion-button-custom:not(.collapsed) {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #138044;
   box-shadow: none;
 }
 .faq .accordion-body-custom {
   font-size: 18px;
   text-align: justify;
   color: white;
-  background-color: #1aa95f;
-  box-shadow: none;
-}
-.faq .accordion-body-custom:not(.collapsed) {
-  box-shadow: none;
+  background-color: #179951;
 }
 .faq .accordion-collapse-custom:last-child {
   border-radius: 0;
 }
 .faq .links {
   font-weight: bold;
-  text-decoration: underline;
-  color: rgb(26, 255, 0);
+  color: #A2FF00;
 }
 .faq .links:hover {
-  color: rgba(5, 219, 1, 0.738);
+  text-decoration: underline;
 }
 @media (max-width: 575.98px) {
   .faq .padding-custom {
@@ -401,27 +395,36 @@ header #selected-page {
   padding-top: 140px;
 }
 .nosotros h1 {
-  /* hice un partial de los mixin porque quizás agrego más */
-  font-size: 64px;
+  font-family: sans-serif;
+  font-size: 5vw;
   color: white;
   text-align: center;
   text-decoration: underline;
-  text-shadow: 2px 2px 0px rgba(250, 250, 250, 0.5);
+  text-shadow: 2px 2px 0px black;
 }
 .nosotros .section-text {
   font-family: sans-serif;
-  font-size: 25px;
+  font-size: 21px;
   text-align: justify;
+  text-shadow: 1px 1px 1px black;
 }
 .nosotros .section-text p {
+  font-family: MontserratRegular;
   margin-inline: 5%;
   color: white;
 }
 .nosotros .section-img img {
   width: 25vw;
   margin-bottom: 0px;
-  border: 5px solid white;
-  border-radius: 30px;
+  border: 3px solid white;
+  border-radius: 10px;
+}
+.nosotros .links {
+  font-weight: bold;
+  color: #A2FF00;
+}
+.nosotros .links:hover {
+  text-decoration: underline;
 }
 @media (max-width: 991.98px) {
   .nosotros .padding-custom {
@@ -458,15 +461,15 @@ header #selected-page {
 .contacto main {
   font-family: sans-serif;
   text-align: center;
-  padding-block: 140px 20px;
+  padding-block: 140px 40px;
 }
 .contacto h1 {
-  /* hice un partial de los mixin porque quizás agrego más */
-  font-size: 64px;
+  font-family: sans-serif;
+  font-size: 5vw;
   color: white;
   text-align: center;
   text-decoration: underline;
-  text-shadow: 2px 2px 0px rgba(250, 250, 250, 0.5);
+  text-shadow: 2px 2px 0px black;
 }
 .contacto form {
   max-width: 600px;

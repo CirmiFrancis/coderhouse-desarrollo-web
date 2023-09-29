@@ -1,9 +1,14 @@
 @font-face{ 
     font-family: BelgianoSerif; 
-    src: url("../fonts/belgiano_serif/Belgiano\ Serif\ 2.otf"); 
+    src: url("../fonts/BelgianoSerif/Belgiano-Serif-2.otf"); 
 }
 
 @font-face{ 
     font-family: ComfortaaLight; 
-    src: url("../fonts/comfortaa/Comfortaa-Light.ttf"); 
+    src: url("../fonts/Comfortaa/static/Comfortaa-Light.ttf"); 
+}
+
+@font-face{
+    font-family: MontserratRegular;
+    src: url("../fonts/Montserrat/static/Montserrat-Regular.ttf"); 
 }
