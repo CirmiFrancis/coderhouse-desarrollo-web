@@ -469,8 +469,8 @@ header #selected-page {
   .nosotros h1 {
     font-size: 48px;
   }
-  .nosotros .section-text, .nosotros .section-img img {
-    margin-bottom: 50px;
+  .nosotros .section-text {
+    margin-bottom: 25px;
   }
   .nosotros .section-img img {
     width: 38vw;
