@@ -72,13 +72,13 @@
             <div class="row mb-4">
                 <div class="col">           
                     <label for="name">Nombre</label>
-                    <input name="name" type="text" id="name" placeholder="Ej: Juan Fernández">
+                    <input name="name" type="text" id="name" placeholder="Ej: Juan Fernández" required>
                 </div>
             </div>
             <div class="row mb-4"">
                 <div class="col">
                     <label for="email">Email</label>
-                    <input name="email" type="email" id="email" placeholder="Ej: juanfernandez@gmail.com">
+                    <input name="email" type="email" id="email" placeholder="Ej: juanfernandez@gmail.com" required>
                 </div>
             </div>
             <div class="row mb-5"">
@@ -92,8 +92,8 @@
             
             <div class="row mt-5">
                 <p class="mb-1 text-start">Consulta</p>
-                <select name="title" class="form-select form-select-custom col" aria-label="Default select example">
-                    <option selected disabled>Elige el motivo</option>
+                <select name="title" class="form-select form-select-custom col" aria-label="Default select example" required>
+                    <option selected disabled value="">Elige el motivo</option>
                     <option value="Duda">*Tengo una DUDA</option>
                     <option value="Jardín Personalizado">*Quiero un JARDÍN PERSONALIZADO</option>
                     <option value="Reembolso">*Solicito un REEMBOLSO</option>
@@ -102,7 +102,7 @@
 
             <div class="row mt-4">
                 <div class="col">
-                    <textarea name="message" id="mensaje" cols="60" rows="10" placeholder="Escribe un mensaje..."></textarea>
+                    <textarea name="message" id="mensaje" cols="60" rows="10" placeholder="Escribe un mensaje..." required></textarea>
                 </div>
             </div>
             <div class="row mt-4">
