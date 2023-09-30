@@ -269,18 +269,18 @@ header #selected-page {
     text-align: center;
   }
   .index .section-banner-left img {
-    width: 50vw;
+    width: 75vw;
     margin-bottom: 10px;
     border: 4px solid white;
     border-radius: 15px;
   }
   .index .section-custom-garden h2 {
-    font-size: 11vw;
+    font-size: 12vw;
     text-align: center;
     text-shadow: 3px 3px 1px black;
   }
   .index .section-custom-garden p {
-    font-size: 5vw;
+    font-size: 5.5vw;
     margin-top: 20px;
     text-align: center;
   }
@@ -289,7 +289,7 @@ header #selected-page {
     border-radius: 10px;
   }
   .index .section-custom-garden .carousel-width-custom {
-    width: 100%;
+    width: 125%;
   }
 }
 
