@@ -72,6 +72,7 @@ header .ul-custom .enlace-custom:hover {
   color: gray;
 }
 header #selected-page {
+  text-decoration: underline;
   color: rgb(22, 218, 26);
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -124,145 +125,171 @@ header #selected-page {
 }
 
 .index .padding-custom {
-  padding-top: 140px;
+  padding-top: 100px;
 }
-.index .section1-right {
-  padding-left: 60px;
+.index .bg-banner {
+  background-color: #1AA95F;
 }
-.index .section1-right h1 {
-  font-size: 8vw;
+.index .section-banner-right {
+  padding-right: 6%;
+}
+.index .section-banner-right h1 {
+  font-size: 7.5vw;
   color: white;
-  text-shadow: 4px 4px 0px rgba(250, 250, 250, 0.5);
+  text-shadow: 4px 4px 1px black;
 }
-.index .section1-right p {
-  font-family: sans-serif;
-  font-size: 2.7vw;
-  color: white;
-}
-.index .section1-left img {
-  width: 30vw;
-  border: 8px solid white;
-  border-radius: 25px;
-}
-.index .bg-custom2 {
-  background-color: #1ebf6c;
-}
-.index .section2 h2 {
-  font-size: 7vw;
-  margin-top: 20px;
-  color: white;
-  text-shadow: 4px 4px 0px rgba(250, 250, 250, 0.5);
-}
-.index .section2 p {
+.index .section-banner-right p {
   font-family: sans-serif;
   font-size: 2.4vw;
-  margin-block: 20px 4rem;
+  text-shadow: 2px 2px 1px black;
   color: white;
 }
-.index .section2 img {
+.index .section-banner-left img {
+  width: 30vw;
   border: 4px solid white;
-  border-radius: 4px;
+  border-radius: 25px;
 }
-.index .carousel-width-custom {
+.index .bg-custom-garden {
+  background-color: #1ebf6c;
+}
+.index .section-custom-garden h2 {
+  font-size: 5vw;
+  text-shadow: 4px 4px 1px black;
+  color: white;
+}
+.index .section-custom-garden p {
+  font-family: sans-serif;
+  font-size: 2vw;
+  text-shadow: 2px 2px 1px black;
+  color: white;
+}
+.index .section-custom-garden img {
+  border: 4px solid white;
+  border-radius: 8px;
+}
+.index .section-custom-garden .carousel-width-custom {
   width: 50%;
+}
+.index .bg-reviews {
+  background-color: rgb(0, 0, 0);
+}
+.index .section-reviews h2 {
+  font-family: sans-serif;
+  font-size: 48px;
+  color: white;
+}
+.index .section-reviews h3 {
+  font-family: MontserratRegular;
+  font-size: 20px;
+  color: white;
+}
+.index .section-reviews p {
+  font-family: MontserratRegular;
 }
 @media (max-width: 991.98px) {
   .index .padding-custom {
-    padding-top: 110px;
+    padding-top: 78px;
   }
 }
 @media (min-width: 767.98px) and (max-width: 1083.98px) {
-  .index .section1-right {
-    padding-left: 35px;
+  .index .section-banner-right h1 {
+    font-size: 7.5vw;
+    text-shadow: 2px 2px 1px black;
   }
-  .index .section1-right h1 {
-    font-size: 8.5vw;
-  }
-  .index .section1-right p {
+  .index .section-banner-right p {
     font-size: 2.8vw;
-    padding-top: 20px;
+    text-shadow: 1px 1px 1px black;
   }
-  .index .section2 img {
-    border: 8px solid white;
+  .index .section-custom-garden h2 {
+    font-size: 5.5vw;
+    padding-bottom: 5px;
+    text-shadow: 2px 2px 1px black;
+  }
+  .index .section-custom-garden p {
+    font-size: 2.1vw;
+    text-shadow: 1px 1px 1px black;
+  }
+  .index .section-custom-garden img {
+    border: 4px solid white;
     border-radius: 10px;
   }
-  .index .section2 p {
-    font-size: 3vw;
-    margin-block: 20px 3rem;
+  .index .section-custom-garden .carousel-width-custom {
+    width: 55%;
   }
 }
-@media (min-width: 404.98px) and (max-width: 767.98px) {
-  .index .section1-left img {
-    width: 250px;
-    border: 5px solid white;
-    border-radius: 25px;
+@media (min-width: 425.98px) and (max-width: 767.98px) {
+  .index .section-banner-right {
+    padding: 0px;
   }
-  .index .section1-right {
-    padding-left: 10px;
-  }
-  .index .section1-right h1 {
-    font-size: 8vw;
+  .index .section-banner-right h1 {
+    font-size: 8.2vw;
+    padding-top: 10px;
     text-align: center;
-    text-shadow: 2px 2px 0px rgba(250, 250, 250, 0.5);
+    text-shadow: 2px 2px 1px black;
   }
-  .index .section1-right p {
+  .index .section-banner-right p {
     font-size: 4vw;
-    padding-top: 20px;
     text-align: center;
   }
-  .index .section2 img {
-    border: 8px solid white;
-    border-radius: 10px;
+  .index .section-banner-left img {
+    width: 40vw;
+    margin-bottom: 10px;
+    border: 4px solid white;
+    border-radius: 15px;
   }
-  .index .section2 h2 {
+  .index .section-custom-garden h2 {
     font-size: 7vw;
     text-align: center;
-    text-shadow: 2px 2px 0px rgba(250, 250, 250, 0.5);
+    text-shadow: 2px 2px 1px black;
   }
-  .index .section2 p {
-    font-size: 4vw;
-    margin-block: 20px 3rem;
+  .index .section-custom-garden p {
+    font-size: 3vw;
     text-align: center;
   }
-  .index .carousel-width-custom {
-    width: 80vw;
-  }
-}
-@media (max-width: 404.98px) {
-  .index .section1-left img {
-    width: 200px;
-    border: 5px solid white;
-    border-radius: 25px;
-  }
-  .index .section1-right {
-    padding-left: 3px;
-  }
-  .index .section1-right h1 {
-    font-size: 10vw;
-    text-align: center;
-    text-shadow: 2px 2px 0px rgba(250, 250, 250, 0.5);
-  }
-  .index .section1-right p {
-    font-size: 4.1vw;
-    padding: 20px 0 0 10px;
-    text-align: center;
-  }
-  .index .section2 img {
-    border: 5px solid white;
+  .index .section-custom-garden img {
+    border: 4px solid white;
     border-radius: 10px;
   }
-  .index .section2 h2 {
-    font-size: 9vw;
-    text-align: center;
-    text-shadow: 2px 2px 0px rgba(250, 250, 250, 0.5);
+  .index .section-custom-garden .carousel-width-custom {
+    width: 75%;
   }
-  .index .section2 p {
-    font-size: 4.5vw;
-    margin-block: 20px 3rem;
+}
+@media (max-width: 425.98px) {
+  .index .section-banner-right {
+    padding: 0px;
+  }
+  .index .section-banner-right h1 {
+    font-size: 13vw;
+    padding-top: 10px;
+    text-align: center;
+    text-shadow: 3px 3px 1px black;
+  }
+  .index .section-banner-right p {
+    font-size: 5.5vw;
     text-align: center;
   }
-  .index .carousel-width-custom {
-    width: 100vw;
+  .index .section-banner-left img {
+    width: 50vw;
+    margin-bottom: 10px;
+    border: 4px solid white;
+    border-radius: 15px;
+  }
+  .index .section-custom-garden h2 {
+    font-size: 11vw;
+    text-align: center;
+    text-shadow: 3px 3px 1px black;
+  }
+  .index .section-custom-garden p {
+    font-size: 5vw;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .index .section-custom-garden img {
+    border: 2px solid white;
+    border-radius: 10px;
+  }
+  .index .section-custom-garden .carousel-width-custom {
+    width: 100%;
   }
 }
 
@@ -505,6 +532,17 @@ header #selected-page {
   text-align: center;
   padding-block: 140px 40px;
 }
+.contacto main button {
+  font-size: 15px;
+  padding: 10px 20px;
+  color: black;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 3px;
+}
+.contacto main button:hover {
+  border: 1px solid black;
+}
 .contacto h1 {
   font-family: sans-serif;
   font-size: 5vw;
@@ -545,17 +583,6 @@ header #selected-page {
 }
 .contacto .form-select-custom {
   margin-inline: 12px;
-}
-.contacto button {
-  font-size: 15px;
-  padding: 10px 20px;
-  color: black;
-  background-color: white;
-  border: 1px solid white;
-  border-radius: 3px;
-}
-.contacto button:hover {
-  border: 1px solid black;
 }
 @media (max-width: 991.98px) {
   .contacto main {
