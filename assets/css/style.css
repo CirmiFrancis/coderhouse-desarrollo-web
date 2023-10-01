@@ -128,7 +128,22 @@ header #selected-page {
   padding-top: 100px;
 }
 .index .bg-banner {
-  background-color: #1AA95F;
+  padding-block: 10px;
+  background-image: url(../media/background-banner.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.index .bg-banner::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid white;
+  z-index: -1;
 }
 .index .section-banner-right {
   padding-right: 6%;
@@ -150,7 +165,21 @@ header #selected-page {
   border-radius: 25px;
 }
 .index .bg-custom-garden {
-  background-color: #1ebf6c;
+  background-image: url(../media/imgs/background-custom-garden.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.index .bg-custom-garden::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid white;
+  z-index: -1;
 }
 .index .section-custom-garden h2 {
   font-size: 5vw;
@@ -171,7 +200,8 @@ header #selected-page {
   width: 50%;
 }
 .index .bg-reviews {
-  background-color: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 70%, rgb(255, 255, 255) 100%);
+  border-bottom: 1px solid black;
 }
 .index .section-reviews h2 {
   font-family: sans-serif;
@@ -185,6 +215,9 @@ header #selected-page {
 }
 .index .section-reviews p {
   font-family: MontserratRegular;
+}
+.index .section-reviews .animation:hover {
+  transform: translateY(-5px);
 }
 @media (max-width: 991.98px) {
   .index .padding-custom {
@@ -219,13 +252,13 @@ header #selected-page {
 }
 @media (min-width: 425.98px) and (max-width: 767.98px) {
   .index .section-banner-right {
-    padding: 0px;
+    padding: 10px 5% 0 5%;
   }
   .index .section-banner-right h1 {
-    font-size: 8.2vw;
+    font-size: 10.5vw;
     padding-top: 10px;
     text-align: center;
-    text-shadow: 2px 2px 1px black;
+    text-shadow: 4px 4px 1px black;
   }
   .index .section-banner-right p {
     font-size: 4vw;
@@ -255,6 +288,9 @@ header #selected-page {
   }
 }
 @media (max-width: 425.98px) {
+  .index .padding-custom {
+    padding-top: 71px;
+  }
   .index .section-banner-right {
     padding: 0px;
   }
@@ -322,6 +358,15 @@ header #selected-page {
   font-family: sans-serif;
   font-size: 15px;
 }
+.jardines .price-custom {
+  font-family: BelgianoSerif;
+  font-size: 30px;
+}
+@media (min-width: 1199.98px) {
+  .jardines .title-custom {
+    font-size: 40px;
+  }
+}
 @media (max-width: 991.98px) {
   .jardines .padding-custom {
     padding-top: 110px;
@@ -330,12 +375,12 @@ header #selected-page {
     font-size: 48px;
   }
 }
-@media (min-width: 767.98px) and (max-width: 967.98px) {
+@media (min-width: 767.98px) and (max-width: 991.98px) {
   .jardines .title-custom {
-    font-size: 22px;
+    font-size: 28px;
   }
   .jardines .desc-custom {
-    font-size: 11px;
+    font-size: 14px;
   }
   .jardines .price-custom {
     font-size: 20px;
