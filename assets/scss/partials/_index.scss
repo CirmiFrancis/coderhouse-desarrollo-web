@@ -113,6 +113,11 @@
         .animation:hover{
             transform: translateY(-5px);
         }
+
+        .sizes{
+            width: 100px;
+            height: 100px;
+        }
     }
 
     @media (max-width: 991.98px){

@@ -218,6 +218,10 @@ header #selected-page {
 .index .section-reviews .animation:hover {
   transform: translateY(-5px);
 }
+.index .section-reviews .sizes {
+  width: 100px;
+  height: 100px;
+}
 @media (max-width: 991.98px) {
   .index .padding-custom {
     padding-top: 78px;
