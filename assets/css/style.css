@@ -336,6 +336,7 @@ header #selected-page {
   font-size: 5vw;
   color: white;
   text-align: center;
+  text-decoration: underline;
   text-shadow: 2px 2px 0px black;
 }
 .jardines .jardin-custom {
@@ -345,7 +346,7 @@ header #selected-page {
 }
 .jardines .jardin-custom:hover {
   transform: scale(1.05);
-  border: 5px solid black;
+  border: 3px solid black;
   cursor: pointer;
 }
 .jardines .title-custom, .jardines .price-custom {
@@ -386,7 +387,7 @@ header #selected-page {
 }
 @media (max-width: 374.98px) {
   .jardines .jardin-custom {
-    width: 15rem;
+    width: 16rem;
   }
 }
 
@@ -398,6 +399,7 @@ header #selected-page {
   font-size: 5vw;
   color: white;
   text-align: center;
+  text-decoration: underline;
   text-shadow: 2px 2px 0px black;
 }
 .faq .width-custom {
@@ -491,6 +493,7 @@ header #selected-page {
   font-size: 5vw;
   color: white;
   text-align: center;
+  text-decoration: underline;
   text-shadow: 2px 2px 0px black;
 }
 .nosotros .section-text {
@@ -589,6 +592,7 @@ header #selected-page {
   font-size: 5vw;
   color: white;
   text-align: center;
+  text-decoration: underline;
   text-shadow: 2px 2px 0px black;
 }
 .contacto form {
