@@ -67,8 +67,8 @@
     }
 
     @media (max-width: 991.98px){
-        main{
-            padding-block: 94px 40px;
+        .padding-custom{
+            padding-top: $padding-jar-faq-nos-con - 30px;
         }
         h1{
             font-size: 48px;

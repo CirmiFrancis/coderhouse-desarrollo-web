@@ -650,8 +650,8 @@ header #selected-page:hover {
   margin-inline: 12px;
 }
 @media (max-width: 991.98px) {
-  .contacto main {
-    padding-block: 94px 40px;
+  .contacto .padding-custom {
+    padding-top: 94px;
   }
   .contacto h1 {
     font-size: 48px;
