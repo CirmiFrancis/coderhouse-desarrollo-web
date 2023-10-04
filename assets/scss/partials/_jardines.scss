@@ -1,6 +1,6 @@
 .jardines{
     .padding-custom{
-        padding-top: 140px;
+        padding-top: $padding-jar-faq-nos-con;
     }
 
     h1{
@@ -10,16 +10,17 @@
     .jardin-custom{
         width: 19rem;
         transition: all 0.25s;
-        border: 3px solid white;
+        border: 2px solid white;
 
         &:hover{
             transform: scale(1.05);
-            border: 3px solid black;
+            border: 2px solid black;
+            box-shadow: 0px 0px 0px 1px white;
             cursor: pointer;
         }
     }
 
-    .title-custom, .price-custom{
+    .title-custom{
         font-family: BelgianoSerif;
         font-size: 30px;
     }
@@ -31,17 +32,20 @@
 
     .price-custom{
         font-family: BelgianoSerif;
-        font-size: 30px;
+        font-size: 24px;
     }
 
     @media (min-width: 1199.98px){
         .title-custom{
-            font-size: 40px;
+            font-size: 36px;
+        }
+        .price-custom{
+            font-size: 30px;
         }
     }
     @media (max-width: 991.98px){
         .padding-custom{
-            padding-top: 110px;
+            padding-top: 94px;
         }
         h1{
             font-size: 48px;
@@ -55,7 +59,7 @@
             font-size: 14px;
         }
         .price-custom{
-            font-size: 20px;
+            font-size: 22px;
         }
     }
     @media (max-width: 374.98px){

@@ -1,6 +1,6 @@
 .faq{
     .padding-custom{
-        padding-top: 140px;
+        padding-top: $padding-jar-faq-nos-con;
     }
 
     h1{
@@ -13,28 +13,25 @@
 
     .accordion-item-custom{
         font-family: ComfortaaLight;
-        color: black;
         border-bottom: 1px solid white;
         box-shadow: none;
-    }
-
-    .accordion-header-custom{
-        background-color: $color-fondo;
+        color: black;
+        background-color: transparent;
     }
     
     .accordion-button-custom{
-        font-size: 20px;
+        font-size: 19px;
         text-shadow: 1px 1px 1px black;
         color: white;
-        background-color: $color-fondo;
+        background-color: transparent;
     
         &:focus{
             box-shadow: none;
         }
     
         &:not(.collapsed){
-            background-color: #138044;
             box-shadow: none;
+            background-color: rgb(0, 0, 0, 0.3);
         }
 
         &::after{
@@ -47,7 +44,10 @@
         text-align: justify;
         text-shadow: 1px 1px 1px black;
         color: white;
-        background-color: #179951;
+
+        &:not(.collapsed){
+            background-color: rgb(0, 0, 0, 0.1);
+        }
     }
 
     .accordion-collapse-custom{
@@ -67,7 +67,7 @@
 
     @media (max-width: 991.98px){
         .padding-custom{
-            padding-top: 110px;
+            padding-top: 94px;
         }
         h1{
             font-size: 48px;
@@ -77,9 +77,6 @@
         }
     } 
     @media (max-width: 575.98px){
-        .padding-custom{
-            padding-top: 110px;
-        }
         .width-custom{
             width: 100%;
         }

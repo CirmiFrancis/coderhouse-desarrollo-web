@@ -32,11 +32,12 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
-  background-color: #1AA95F;
+  background: linear-gradient(145deg, rgb(18, 86, 48) 0%, rgb(19, 90, 28) 50%, rgb(21, 100, 71) 100%);
+  background-color: #125630;
 }
 
 main {
-  background-color: #1AA95F;
+  background: linear-gradient(145deg, rgb(18, 86, 48) 0%, rgb(19, 90, 28) 50%, rgb(21, 100, 71) 100%);
 }
 
 header a {
@@ -70,10 +71,14 @@ header .ul-custom .enlace-custom {
 }
 header .ul-custom .enlace-custom:hover {
   color: gray;
+  text-decoration: underline;
 }
 header #selected-page {
+  color: #16C01A;
   text-decoration: underline;
-  color: rgb(22, 218, 26);
+}
+header #selected-page:hover {
+  color: #009803;
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
   header .logo {
@@ -125,14 +130,14 @@ header #selected-page {
 }
 
 .index .padding-custom {
-  padding-top: 100px;
+  padding-top: 84px;
 }
 .index .bg-banner {
-  padding-block: 10px;
-  background-image: url(../media/background-banner.gif);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  padding-block: 18px;
+  background-image: url(../media/background-banner.gif);
 }
 .index .bg-banner::before {
   content: "";
@@ -141,23 +146,29 @@ header #selected-page {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
   border-bottom: 1px solid white;
   z-index: -1;
+}
+.index .bg-banner::before {
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .index .section-banner-right {
   padding-right: 6%;
 }
-.index .section-banner-right h1 {
-  font-size: 7.5vw;
-  color: white;
+.index .section-banner-right h1, .index .section-banner-right h2 {
   text-shadow: 4px 4px 1px black;
+  color: white;
 }
 .index .section-banner-right p {
   font-family: sans-serif;
-  font-size: 2.4vw;
   text-shadow: 2px 2px 1px black;
   color: white;
+}
+.index .section-banner-right h1 {
+  font-size: 7.5vw;
+}
+.index .section-banner-right p {
+  font-size: 2.4vw;
 }
 .index .section-banner-left img {
   width: 30vw;
@@ -165,10 +176,10 @@ header #selected-page {
   border-radius: 25px;
 }
 .index .bg-custom-garden {
-  background-image: url(../media/imgs/background-custom-garden.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-image: url(../media/imgs/background-custom-garden.jpg);
 }
 .index .bg-custom-garden::before {
   content: "";
@@ -177,20 +188,26 @@ header #selected-page {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px solid white;
   z-index: -1;
 }
-.index .section-custom-garden h2 {
-  font-size: 5vw;
+.index .bg-custom-garden::before {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.index .section-custom-garden h1, .index .section-custom-garden h2 {
   text-shadow: 4px 4px 1px black;
   color: white;
 }
 .index .section-custom-garden p {
   font-family: sans-serif;
-  font-size: 2vw;
   text-shadow: 2px 2px 1px black;
   color: white;
+}
+.index .section-custom-garden h2 {
+  font-size: 5vw;
+}
+.index .section-custom-garden p {
+  font-size: 2vw;
 }
 .index .section-custom-garden img {
   border: 4px solid white;
@@ -224,7 +241,7 @@ header #selected-page {
 }
 @media (max-width: 991.98px) {
   .index .padding-custom {
-    padding-top: 78px;
+    padding-top: 62px;
   }
 }
 @media (min-width: 767.98px) and (max-width: 1083.98px) {
@@ -292,7 +309,7 @@ header #selected-page {
 }
 @media (max-width: 425.98px) {
   .index .padding-custom {
-    padding-top: 71px;
+    padding-top: 55px;
   }
   .index .section-banner-right {
     padding: 0px;
@@ -333,27 +350,27 @@ header #selected-page {
 }
 
 .jardines .padding-custom {
-  padding-top: 140px;
+  padding-top: 124px;
 }
 .jardines h1 {
-  font-family: sans-serif;
+  font-family: MontserratRegular;
   font-size: 5vw;
   color: white;
   text-align: center;
-  text-decoration: underline;
-  text-shadow: 2px 2px 0px black;
+  text-shadow: 4px 4px 0px black;
 }
 .jardines .jardin-custom {
   width: 19rem;
   transition: all 0.25s;
-  border: 3px solid white;
+  border: 2px solid white;
 }
 .jardines .jardin-custom:hover {
   transform: scale(1.05);
-  border: 3px solid black;
+  border: 2px solid black;
+  box-shadow: 0px 0px 0px 1px white;
   cursor: pointer;
 }
-.jardines .title-custom, .jardines .price-custom {
+.jardines .title-custom {
   font-family: BelgianoSerif;
   font-size: 30px;
 }
@@ -363,16 +380,19 @@ header #selected-page {
 }
 .jardines .price-custom {
   font-family: BelgianoSerif;
-  font-size: 30px;
+  font-size: 24px;
 }
 @media (min-width: 1199.98px) {
   .jardines .title-custom {
-    font-size: 40px;
+    font-size: 36px;
+  }
+  .jardines .price-custom {
+    font-size: 30px;
   }
 }
 @media (max-width: 991.98px) {
   .jardines .padding-custom {
-    padding-top: 110px;
+    padding-top: 94px;
   }
   .jardines h1 {
     font-size: 48px;
@@ -386,7 +406,7 @@ header #selected-page {
     font-size: 14px;
   }
   .jardines .price-custom {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 @media (max-width: 374.98px) {
@@ -396,40 +416,37 @@ header #selected-page {
 }
 
 .faq .padding-custom {
-  padding-top: 140px;
+  padding-top: 124px;
 }
 .faq h1 {
-  font-family: sans-serif;
+  font-family: MontserratRegular;
   font-size: 5vw;
   color: white;
   text-align: center;
-  text-decoration: underline;
-  text-shadow: 2px 2px 0px black;
+  text-shadow: 4px 4px 0px black;
 }
 .faq .width-custom {
   width: 75%;
 }
 .faq .accordion-item-custom {
   font-family: ComfortaaLight;
-  color: black;
   border-bottom: 1px solid white;
   box-shadow: none;
-}
-.faq .accordion-header-custom {
-  background-color: #1AA95F;
+  color: black;
+  background-color: transparent;
 }
 .faq .accordion-button-custom {
-  font-size: 20px;
+  font-size: 19px;
   text-shadow: 1px 1px 1px black;
   color: white;
-  background-color: #1AA95F;
+  background-color: transparent;
 }
 .faq .accordion-button-custom:focus {
   box-shadow: none;
 }
 .faq .accordion-button-custom:not(.collapsed) {
-  background-color: #138044;
   box-shadow: none;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .faq .accordion-button-custom::after {
   background-image: url(../media/imgs/otros/flecha.png);
@@ -439,7 +456,9 @@ header #selected-page {
   text-align: justify;
   text-shadow: 1px 1px 1px black;
   color: white;
-  background-color: #179951;
+}
+.faq .accordion-body-custom:not(.collapsed) {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 .faq .accordion-collapse-custom:last-child {
   border-radius: 0;
@@ -453,7 +472,7 @@ header #selected-page {
 }
 @media (max-width: 991.98px) {
   .faq .padding-custom {
-    padding-top: 110px;
+    padding-top: 94px;
   }
   .faq h1 {
     font-size: 48px;
@@ -463,9 +482,6 @@ header #selected-page {
   }
 }
 @media (max-width: 575.98px) {
-  .faq .padding-custom {
-    padding-top: 110px;
-  }
   .faq .width-custom {
     width: 100%;
   }
@@ -490,15 +506,14 @@ header #selected-page {
 }
 
 .nosotros .padding-custom {
-  padding-top: 140px;
+  padding-top: 124px;
 }
 .nosotros h1 {
-  font-family: sans-serif;
+  font-family: MontserratRegular;
   font-size: 5vw;
   color: white;
   text-align: center;
-  text-decoration: underline;
-  text-shadow: 2px 2px 0px black;
+  text-shadow: 4px 4px 0px black;
 }
 .nosotros .section-text {
   font-family: sans-serif;
@@ -542,7 +557,7 @@ header #selected-page {
 }
 @media (max-width: 991.98px) {
   .nosotros .padding-custom {
-    padding-top: 110px;
+    padding-top: 94px;
   }
   .nosotros h1 {
     font-size: 48px;
@@ -575,10 +590,13 @@ header #selected-page {
   }
 }
 
+.contacto .padding-custom {
+  padding-top: 124px;
+  padding-bottom: 40px;
+}
 .contacto main {
   font-family: sans-serif;
   text-align: center;
-  padding-block: 140px 40px;
 }
 .contacto main button {
   font-size: 15px;
@@ -592,12 +610,11 @@ header #selected-page {
   border: 1px solid black;
 }
 .contacto h1 {
-  font-family: sans-serif;
+  font-family: MontserratRegular;
   font-size: 5vw;
   color: white;
   text-align: center;
-  text-decoration: underline;
-  text-shadow: 2px 2px 0px black;
+  text-shadow: 4px 4px 0px black;
 }
 .contacto form {
   max-width: 600px;
@@ -623,7 +640,7 @@ header #selected-page {
 }
 .contacto hr {
   border-top: 2px solid white;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 .contacto p {
   text-shadow: 1px 1px 1px black;
@@ -634,7 +651,7 @@ header #selected-page {
 }
 @media (max-width: 991.98px) {
   .contacto main {
-    padding-block: 110px 40px;
+    padding-block: 94px 40px;
   }
   .contacto h1 {
     font-size: 48px;

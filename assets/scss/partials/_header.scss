@@ -36,13 +36,18 @@ header{
     
             &:hover{
                 color: gray;
+                text-decoration: underline;
             }
         }
     }
 
     #selected-page{
+        color: #16C01A;
         text-decoration: underline;
-        color: rgb(22, 218, 26);
+
+        &:hover{
+            color: #009803;
+        }
     }
 
     @media (min-width: 768px) and (max-width: 991.98px){

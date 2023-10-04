@@ -1,6 +1,6 @@
 .nosotros{
     .padding-custom{
-        padding-top: 140px;
+        padding-top: $padding-jar-faq-nos-con;
     }
 
     h1{
@@ -54,7 +54,7 @@
     }
     @media (max-width: 991.98px){
         .padding-custom{
-            padding-top: 110px;
+            padding-top: 94px;
         }
         h1{
             font-size: 48px;
