@@ -12,7 +12,8 @@
     }
 
     .accordion-item-custom{
-        font-family: ComfortaaLight;
+        font-family: MontserratRegular;
+        text-shadow: 1px 1px 0px black;
         border-bottom: 1px solid white;
         box-shadow: none;
         color: black;
@@ -21,7 +22,7 @@
     
     .accordion-button-custom{
         font-size: 19px;
-        text-shadow: 1px 1px 1px black;
+        text-shadow: 1px 1px 0px black;
         color: white;
         background-color: transparent;
     
@@ -42,7 +43,6 @@
     .accordion-body-custom{
         font-size: 18px;
         text-align: justify;
-        text-shadow: 1px 1px 1px black;
         color: white;
 
         &:not(.collapsed){

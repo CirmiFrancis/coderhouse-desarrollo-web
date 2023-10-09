@@ -17,21 +17,23 @@
 
 @mixin text-index{
     h1, h2{
-        text-shadow: 4px 4px 1px black;
+        font-family: serif;
+        text-shadow: 3px 3px 1px black;
         color: white;
     }
 
     p{
         font-family: sans-serif;
+        font-weight: 100;
         text-shadow: 2px 2px 1px black;
         color: white;
     }
 }
 
 @mixin h1-jar-faq-nos-con{
-    font-family: MontserratRegular;
+    font-family: EBGaramondMedium;
     font-size: 5vw;
     color: white;
     text-align: center;
-    text-shadow: 4px 4px 0px black;
+    text-shadow: 3px 2px 0px black;
 }

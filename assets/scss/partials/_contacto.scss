@@ -31,6 +31,7 @@
     }
     
     label{
+        font-family: MontserratRegular;
         display: block;
         margin-bottom: 5px;
         text-align: left;
@@ -41,8 +42,8 @@
     input, textarea, .form-select-custom{
         width: 100%;
         padding: 8px;
+        font-family: MontserratRegular;
         font-size: 15px;
-        font-family: sans-serif;
         resize: none;
         border: none;
         border-radius: 3px;
@@ -58,6 +59,7 @@
     }
 
     p{
+        font-family: MontserratRegular;
         text-shadow: 1px 1px 1px black;
         color: white;
     }
@@ -76,7 +78,7 @@
     }  
     @media (max-width: 374.98px){
         input, textarea, .form-select-custom{
-            font-size: 13px;
+            font-size: 12px;
         }
     }
 }

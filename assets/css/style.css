@@ -10,6 +10,10 @@
   font-family: MontserratRegular;
   src: url("../fonts/Montserrat/static/Montserrat-Regular.ttf");
 }
+@font-face {
+  font-family: EBGaramondMedium;
+  src: url("../fonts/EB-Garamond/static/EBGaramond-Medium.ttf");
+}
 * {
   margin: 0;
   padding: 0;
@@ -156,11 +160,13 @@ header #selected-page:hover {
   padding-right: 6%;
 }
 .index .section-banner-right h1, .index .section-banner-right h2 {
-  text-shadow: 4px 4px 1px black;
+  font-family: serif;
+  text-shadow: 3px 3px 1px black;
   color: white;
 }
 .index .section-banner-right p {
   font-family: sans-serif;
+  font-weight: 100;
   text-shadow: 2px 2px 1px black;
   color: white;
 }
@@ -195,11 +201,13 @@ header #selected-page:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
 .index .section-custom-garden h1, .index .section-custom-garden h2 {
-  text-shadow: 4px 4px 1px black;
+  font-family: serif;
+  text-shadow: 3px 3px 1px black;
   color: white;
 }
 .index .section-custom-garden p {
   font-family: sans-serif;
+  font-weight: 100;
   text-shadow: 2px 2px 1px black;
   color: white;
 }
@@ -220,7 +228,7 @@ header #selected-page:hover {
   background-color: black;
 }
 .index .section-reviews h2 {
-  font-family: sans-serif;
+  font-family: serif;
   font-size: 48px;
   color: white;
 }
@@ -353,11 +361,11 @@ header #selected-page:hover {
   padding-top: 124px;
 }
 .jardines h1 {
-  font-family: MontserratRegular;
+  font-family: EBGaramondMedium;
   font-size: 5vw;
   color: white;
   text-align: center;
-  text-shadow: 4px 4px 0px black;
+  text-shadow: 3px 2px 0px black;
 }
 .jardines .jardin-custom {
   width: 19rem;
@@ -419,17 +427,18 @@ header #selected-page:hover {
   padding-top: 124px;
 }
 .faq h1 {
-  font-family: MontserratRegular;
+  font-family: EBGaramondMedium;
   font-size: 5vw;
   color: white;
   text-align: center;
-  text-shadow: 4px 4px 0px black;
+  text-shadow: 3px 2px 0px black;
 }
 .faq .width-custom {
   width: 75%;
 }
 .faq .accordion-item-custom {
-  font-family: ComfortaaLight;
+  font-family: MontserratRegular;
+  text-shadow: 1px 1px 0px black;
   border-bottom: 1px solid white;
   box-shadow: none;
   color: black;
@@ -437,7 +446,7 @@ header #selected-page:hover {
 }
 .faq .accordion-button-custom {
   font-size: 19px;
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 1px 1px 0px black;
   color: white;
   background-color: transparent;
 }
@@ -454,7 +463,6 @@ header #selected-page:hover {
 .faq .accordion-body-custom {
   font-size: 18px;
   text-align: justify;
-  text-shadow: 1px 1px 1px black;
   color: white;
 }
 .faq .accordion-body-custom:not(.collapsed) {
@@ -509,11 +517,11 @@ header #selected-page:hover {
   padding-top: 124px;
 }
 .nosotros h1 {
-  font-family: MontserratRegular;
+  font-family: EBGaramondMedium;
   font-size: 5vw;
   color: white;
   text-align: center;
-  text-shadow: 4px 4px 0px black;
+  text-shadow: 3px 2px 0px black;
 }
 .nosotros .section-text {
   font-family: sans-serif;
@@ -610,16 +618,17 @@ header #selected-page:hover {
   border: 1px solid black;
 }
 .contacto h1 {
-  font-family: MontserratRegular;
+  font-family: EBGaramondMedium;
   font-size: 5vw;
   color: white;
   text-align: center;
-  text-shadow: 4px 4px 0px black;
+  text-shadow: 3px 2px 0px black;
 }
 .contacto form {
   max-width: 600px;
 }
 .contacto label {
+  font-family: MontserratRegular;
   display: block;
   margin-bottom: 5px;
   text-align: left;
@@ -629,8 +638,8 @@ header #selected-page:hover {
 .contacto input, .contacto textarea, .contacto .form-select-custom {
   width: 100%;
   padding: 8px;
+  font-family: MontserratRegular;
   font-size: 15px;
-  font-family: sans-serif;
   resize: none;
   border: none;
   border-radius: 3px;
@@ -643,6 +652,7 @@ header #selected-page:hover {
   opacity: 0.7;
 }
 .contacto p {
+  font-family: MontserratRegular;
   text-shadow: 1px 1px 1px black;
   color: white;
 }
@@ -659,7 +669,7 @@ header #selected-page:hover {
 }
 @media (max-width: 374.98px) {
   .contacto input, .contacto textarea, .contacto .form-select-custom {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 
