@@ -7,4 +7,4 @@ Para más información, te invito a que visites el sitio web: http://minigarden.
 
 Certificado de aprobación del Curso:
 
-![Imagen del Certificado](https://github.com/CirmiFrancis/coderhouse-desarrollo-web-minigarden/blob/main/certificado.png?raw=true)
+![Imagen del Certificado](https://github.com/CirmiFrancis/coderhouse-desarrollo-web-minigarden/blob/main/certificate.png?raw=true)
