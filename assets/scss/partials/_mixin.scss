@@ -17,7 +17,7 @@
 
 @mixin text-index{
     h1, h2{
-        font-family: serif;
+        font-family: LoraRegular;
         text-shadow: 3px 3px 1px black;
         color: white;
     }
@@ -31,7 +31,7 @@
 }
 
 @mixin h1-jar-faq-nos-con{
-    font-family: EBGaramondMedium;
+    font-family: LoraRegular;
     font-size: 5vw;
     color: white;
     text-align: center;
