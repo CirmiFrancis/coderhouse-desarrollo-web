@@ -323,14 +323,18 @@ header #selected-page:hover {
     padding: 0px;
   }
   .index .section-banner-right h1 {
+    font-family: serif;
     font-size: 13vw;
     padding-top: 10px;
     text-align: center;
-    text-shadow: 3px 3px 1px black;
+    text-shadow: 2px 1px 0px black;
   }
   .index .section-banner-right p {
+    font-family: sans-serif;
     font-size: 5.5vw;
+    font-weight: 400;
     text-align: center;
+    text-shadow: 1px 1px 0px black;
   }
   .index .section-banner-left img {
     width: 75vw;
@@ -341,12 +345,13 @@ header #selected-page:hover {
   .index .section-custom-garden h2 {
     font-size: 12vw;
     text-align: center;
-    text-shadow: 3px 3px 1px black;
+    text-shadow: 2px 1px 0px black;
   }
   .index .section-custom-garden p {
     font-size: 5.5vw;
     margin-top: 20px;
     text-align: center;
+    text-shadow: 1px 1px 0px black;
   }
   .index .section-custom-garden img {
     border: 2px solid white;
