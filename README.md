@@ -5,7 +5,7 @@ MiniGarden es un emprendimiento ficticio dedicado a la venta de jardines en mini
 
 Para más información, te invito a que visites el sitio web: 
 - GitHub Pages: https://cirmifrancis.github.io/coderhouse-desarrollo-web-minigarden/
-- Infinity Free: http://minigarden.free.nf/
+- InfinityFree: http://minigarden.free.nf/
 
 Certificado de aprobación del Curso:
 
