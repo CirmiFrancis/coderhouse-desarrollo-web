@@ -154,7 +154,7 @@ header #selected-page:hover {
   z-index: -1;
 }
 .index .bg-banner::before {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .index .section-banner-right {
   padding-right: 6%;
@@ -177,7 +177,7 @@ header #selected-page:hover {
   font-size: 2.4vw;
 }
 .index .section-banner-left img {
-  width: 30vw;
+  width: 29vw;
   border: 4px solid white;
   border-radius: 25px;
 }
@@ -198,7 +198,7 @@ header #selected-page:hover {
   z-index: -1;
 }
 .index .bg-custom-garden::before {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .index .section-custom-garden h1, .index .section-custom-garden h2 {
   font-family: LoraRegular;
@@ -240,8 +240,11 @@ header #selected-page:hover {
 .index .section-reviews p {
   font-family: MontserratRegular;
 }
+.index .section-reviews .text-justify {
+  text-align: justify;
+}
 .index .section-reviews .animation:hover {
-  transform: translateY(-5px);
+  background-color: rgb(240, 240, 240);
 }
 .index .section-reviews .sizes {
   width: 100px;

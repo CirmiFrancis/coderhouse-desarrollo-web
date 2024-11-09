@@ -9,7 +9,7 @@
         background-image: url(../media/background-banner.gif);
 
         &::before{
-            background-color: rgba(0, 0, 0, 0.4);
+            background-color: rgba(0, 0, 0, 0.5);
         }
     }
 
@@ -28,7 +28,7 @@
     }
 
     .section-banner-left img{
-        width: 30vw;
+        width: 29vw;
         border: 4px solid white;
         border-radius: 25px;
     } 
@@ -38,7 +38,7 @@
         background-image: url(../media/imgs/background-custom-garden.jpg);
 
         &::before{
-            background-color: rgba(0, 0, 0, 0.3);
+            background-color: rgba(0, 0, 0, 0.4);
         }
     }
 
@@ -84,8 +84,12 @@
             font-family: MontserratRegular;
         }
 
+        .text-justify {
+            text-align: justify;
+        }
+
         .animation:hover{
-            transform: translateY(-5px);
+            background-color: rgb(240, 240, 240);
         }
 
         .sizes{
