@@ -1,4 +1,8 @@
 .index{
+    .text-color-description {
+        color: rgb(200, 200, 200) !important;
+    }
+
     .padding-custom{
         padding-top: 84px;
     }
@@ -9,7 +13,7 @@
         background-image: url(../media/background-banner.gif);
 
         &::before{
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0.6);
         }
     }
 
@@ -38,7 +42,7 @@
         background-image: url(../media/imgs/background-custom-garden.jpg);
 
         &::before{
-            background-color: rgba(0, 0, 0, 0.4);
+            background-color: rgba(0, 0, 0, 0.5);
         }
     }
 
