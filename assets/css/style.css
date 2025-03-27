@@ -147,7 +147,7 @@ header #selected-page:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  padding-block: 18px;
+  padding-block: 26px;
   background-image: url(../media/background-banner.gif);
 }
 .index .bg-banner::before {

@@ -9,7 +9,7 @@
 
     .bg-banner{
         @include bg-index;
-        padding-block: 18px;
+        padding-block: 26px;
         background-image: url(../media/background-banner.gif);
 
         &::before{
